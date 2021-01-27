@@ -128,7 +128,7 @@ div.hero {
 div.hero h2 {
   top: 0;
   font-weight: 600;
-  font-size: 120%;
+  font-size: 50px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -140,7 +140,7 @@ div.hero h2:nthChild(1) {
 }
 
 div.hero h3 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media (min-width: 658px) {
@@ -349,6 +349,8 @@ footer {
   padding: 5px 10px 5px 10px;
   z-index: 100;
   font-size: 12px;
+  -webkit-box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 658px) {
