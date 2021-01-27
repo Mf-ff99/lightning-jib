@@ -1,5 +1,9 @@
 @import 'mixins';
 
+.jyUYLR {
+    z-index: 1;
+}
+
 div.hero {
     @include flexCenter(column);
     min-width: 50vw;
@@ -50,6 +54,7 @@ div.hero {
         // float: middle;
             min-height: 300px;
             width: 100%;
+            z-index: -1;
     }
     @media (min-width: 786px) {
         img {

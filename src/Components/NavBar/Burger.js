@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Animated } from 'react-animated-css';
 import styled from 'styled-components'
 import MobileNav from './MobileMenu';
 
@@ -7,7 +6,7 @@ const StyledBurger = styled.div`
 margin-top: 5px;
     width: 2rem;
     height: 2rem;
-    top: ${({open}) => open ? '30px' : '10px'};
+    top: ${({ open }) => open ? '30px' : '10px'};
     right: 30px;
     margin-right: 10px;
     display: flex;
@@ -16,7 +15,7 @@ margin-top: 5px;
     cursor: pointer;
     z-index: 4000;
     /* float: right; */
-    position: ${({open}) => open ? 'fixed' : 'relative'};
+    position: ${({ open }) => open ? 'fixed' : 'relative'};
     transition: .5s ease-in-out;
     /* z-index: 100; */
     div {
@@ -24,28 +23,28 @@ margin-top: 5px;
         height: .25rem;
         border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({open}) => open ? '#fff' : 'white'};
+        background-color: ${({ open }) => open ? '#fff' : 'white'};
         transform-origin: 1px;
         transition: all .3s;
-        transform: ${({open}) => open ? 'rotate(90deg)' : 'rotate(0deg)'};
+        transform: ${({ open }) => open ? 'rotate(90deg)' : 'rotate(0deg)'};
 
         &:nth-child(1) {
-            transform: ${({open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
         } 
         
         &:nth-child(2) {
-            transform: ${({open }) => open ? 'translateY(100%)' : 'translateY(0%)'};
+            transform: ${({ open }) => open ? 'translateY(100%)' : 'translateY(0%)'};
             
-            opacity: ${({open }) => open ? '0' : '1'};
+            opacity: ${({ open }) => open ? '0' : '1'};
         
         }
 
         &:nth-child(3) {
-            transform: ${({open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 480px) {
         display: none !important;
     }
 `;
@@ -54,16 +53,14 @@ const Burger = () => {
 
     return (
         <>
-            
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
-            <>
-            <div></div>
-            <div></div>
-            <div></div>
-            </>
-        </StyledBurger>
-        <MobileNav open={open}/>
-    
+            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+                <>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </>
+            </StyledBurger>
+            <MobileNav open={open} />
         </>
     )
 }

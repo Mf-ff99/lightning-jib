@@ -94,6 +94,10 @@ a {
   color: black !important;
 }
 
+.jyUYLR {
+  z-index: 1;
+}
+
 div.hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +155,7 @@ div.hero h3 {
 .background-hero img {
   min-height: 300px;
   width: 100%;
+  z-index: -1;
 }
 
 @media (min-width: 786px) {

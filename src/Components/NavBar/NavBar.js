@@ -49,7 +49,7 @@ const NavStyled = styled.nav`
     /* width: 90%; */
     background-color: black;
     color: white !important;
-    z-index: 0;
+    z-index: 1;
     /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
     font-size: 18px;
@@ -75,11 +75,12 @@ const NavStyled = styled.nav`
     a {
         color: whitesmoke !important;
         text-decoration: none;
+        font-size: 15px;
     }
 
     .logo {
         margin: 0;
-        padding: 0 0 0 50px;
+        /* padding: 0 0 0 10px; */
     }
 
     .logo span {
@@ -95,10 +96,11 @@ const NavStyled = styled.nav`
 
     @media (max-width: 770px) {
         justify-content: space-between;
+        flex-direction: row;
         padding: 10px;
         width: 100vw;
     }
-    @media (min-width: 658px) {
+    @media (min-width: 480px) {
         flex-direction: column;
     } 
 `;

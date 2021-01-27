@@ -10,27 +10,16 @@ const UL = styled.ul`
     align-items: center;
     justify-content: space-between;
     width: 100vh;
-    // min-height: 800px;
     margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     z-index: 100;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     max-width: 700px;
-    /* padding-right: 80px; */
-    /* padding-top: 10px; */
     background-color: black;
-    /* li {
-        color: black !important;
-        padding: 18px 10px;
-        &:nth-child(4) {
-            min-width: 120px;
-        } */
-    
-
-    
-
     img {
         padding: 0;
         height: 90px;
@@ -59,9 +48,7 @@ const UL = styled.ul`
         right: 0;
         
     }
-
-    @media (max-width: 768px) {
-       
+    @media (max-width: 480px) {
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
@@ -75,13 +62,11 @@ const UL = styled.ul`
         width: 75vw !important;
         border-left: 1px solid black;
         border-radius: 3px;
-
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
         font-size: 25px;
-        /* scroll-behavior: unset; */
-
+        opacity: .8;
     a {
         color: white !important;
         font-size: 18px;
@@ -99,11 +84,6 @@ const UL = styled.ul`
         a {
             font-size: 18px;
         }
-        li.mobile a img{
-            display: none !important;
-            /* border: 1px solid red; */
-        }
-
     }
 `
 
@@ -126,22 +106,22 @@ class MobileNav extends React.Component {
         if(!open) clearAllBodyScrollLocks()
         return (
             <UL id='mobile-nav' open={open}>
-            <li className="right-side-nav">
+            {/* <li className="right-side-nav">
                 <a href="/showreel">NavItem</a>
 
             </li>
             <li className="right-side-nav">
                 <a href='/tools'>NavItem</a>
+            </li> */}
+            <li className="right-side-nav">
+                <a href='/lightning-jib'>Learn More</a>
             </li>
             <li className="right-side-nav">
-                <a href='/jordy-klein'>NavItem</a>
-            </li>
-            <li className="right-side-nav">
-                <a href="/contact">Contact</a>
+                <a href="/contact">Contact Us</a>
 
             </li>
             <li className="right-side-nav end">
-                <a href="/about">About</a>
+                <a href="/about">About Our Team</a>
 
             </li>
         </UL>
