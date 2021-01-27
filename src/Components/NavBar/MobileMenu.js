@@ -6,7 +6,7 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 const UL = styled.ul`
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100vh;
@@ -15,13 +15,11 @@ const UL = styled.ul`
     padding-left: 0;
     z-index: 100;
     overflow: hidden;
-    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-weight: 600;
     max-width: 700px;
-    padding-right: 80px;
-    padding-top: 10px;
+    /* padding-right: 80px; */
+    /* padding-top: 10px; */
     background-color: black;
     /* li {
         color: black !important;
@@ -40,7 +38,7 @@ const UL = styled.ul`
     }
     
     a {
-        color: black !important;
+        color: white !important;
     }
 
     .logo-text-left a {
@@ -86,17 +84,21 @@ const UL = styled.ul`
 
     a {
         color: white !important;
+        font-size: 18px;
     }
-        li {
-            color: white;
-        }
-
-        .logo {
-            flex-direction: column;
-            justify-content: center !important;
-        }
+    li {
+        color: white;
     }
-    @media (min-width: 769px) {
+    
+    .logo {
+        flex-direction: column;
+        justify-content: center !important;
+    }
+}
+@media (min-width: 769px) {
+        a {
+            font-size: 18px;
+        }
         li.mobile a img{
             display: none !important;
             /* border: 1px solid red; */

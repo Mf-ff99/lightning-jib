@@ -9,7 +9,9 @@ const StyledLogo = styled.div`
     padding-right: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    h1 {
+        font-size: 15px !important;
+    }
     img {
         padding: 0;
         height: 90px; 
@@ -29,6 +31,7 @@ const StyledLogo = styled.div`
     @media (min-width: 768px) {
         /* display: none !important; */
         /* color: red !important; */
+        flex-direction: column;
     }
 `;
 
@@ -36,11 +39,11 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 100px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
@@ -62,7 +65,6 @@ const NavStyled = styled.nav`
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        /* background-color: whitesmoke; */
         color: white !important;
     }
 
@@ -72,14 +74,12 @@ const NavStyled = styled.nav`
 
     a {
         color: whitesmoke !important;
+        text-decoration: none;
     }
 
     .logo {
-        /* height: 90px;
-        width: 90px; */
         margin: 0;
         padding: 0 0 0 50px;
-
     }
 
     .logo span {
@@ -98,6 +98,9 @@ const NavStyled = styled.nav`
         padding: 10px;
         width: 100vw;
     }
+    @media (min-width: 658px) {
+        flex-direction: column;
+    } 
 `;
 
 export default class Nav extends React.Component {
@@ -108,7 +111,7 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'><h2>Home</h2></a></span>
+                <span className="logo"><a href='/'><h1>Lightning Jib</h1></a></span>
           
                 </StyledLogo>
                 
