@@ -174,7 +174,7 @@ div.info-block {
       -ms-flex-pack: center;
           justify-content: center;
   align-items: center;
-  max-height: 500px;
+  height: 500px;
   padding: 30px 10px 30px 10px;
 }
 
@@ -220,22 +220,36 @@ div.info-block p {
   }
 }
 
+div.info-block:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  z-index: -1;
+  opacity: .5;
+}
+
 div.white-block {
-  margin-top: 50px;
   z-index: 5;
+  height: 500px;
+  margin-bottom: 20px;
 }
 
 div.white-block p {
-  color: black !important;
+  color: white !important;
+}
+
+div.white-block img {
+  max-height: 400px;
 }
 
 div.white-block:before {
   content: "";
   position: absolute;
-  padding: 10px;
   width: 100%;
-  height: 70%;
-  background-color: white;
+  height: 500px;
+  background-color: black;
   z-index: -1;
   opacity: .5;
 }
@@ -245,6 +259,7 @@ div.image-right {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  padding: 0 20px 0 20px;
 }
 
 @media (min-width: 658px) {
@@ -257,9 +272,21 @@ div.image-right {
 }
 
 div.video-block {
-  height: 800px;
-  padding: 20px;
-  overflow-x: hidden;
+  height: 500px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.video-block p {
@@ -267,17 +294,15 @@ div.video-block p {
 }
 
 div.video-block iframe {
-  padding: 10px;
   z-index: 5;
 }
 
 div.video-block:before {
   content: "";
-  content: "";
   position: absolute;
-  padding: 10px;
-  width: 80%;
-  height: 70%;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 500px;
   background-color: black;
   z-index: -1;
   opacity: .5;
@@ -289,8 +314,46 @@ div.video-block .image-container {
 }
 
 @media (min-width: 658px) {
+  div.video-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   div.video-block iframe {
     width: 80%;
+  }
+}
+
+footer {
+  bottom: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: .9;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  z-index: 100;
+  font-size: 12px;
+}
+
+@media (min-width: 658px) {
+  footer {
+    font-size: 18px;
   }
 }
 
@@ -309,7 +372,7 @@ main {
 
 .App {
   background-color: transparent;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .krIRUZ {

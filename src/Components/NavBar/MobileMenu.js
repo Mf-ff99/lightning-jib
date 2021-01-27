@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { Link } from 'react-router-dom';
 
 
 const UL = styled.ul`
@@ -83,6 +84,12 @@ font-family: 'K2D', sans-serif;
     li {
         color: white;
     }
+
+    .home-nav-link {
+        @media (min-width: 658px) {
+            display: none;
+        }
+    }
     
     .logo {
         flex-direction: column;
@@ -123,15 +130,18 @@ class MobileNav extends React.Component {
             <li className="right-side-nav">
                 <a href='/tools'>NavItem</a>
             </li> */}
-            <li className="right-side-nav">
-                <a href='/lightning-jib'>Learn More</a>
+            <li className="right-side-nav home-nav-link">
+                <Link to='/'>Home</Link>
             </li>
             <li className="right-side-nav">
-                <a href="/contact">Contact Us</a>
+                <Link to='/lightning-jib'>Learn More</Link>
+            </li>
+            <li className="right-side-nav">
+                <Link to="/contact">Contact Us</Link>
 
             </li>
             <li className="right-side-nav">
-                <a href="/about">About Our Team</a>
+                <Link to="/about">About Our Team</Link>
 
             </li>
         </UL>

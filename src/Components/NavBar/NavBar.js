@@ -82,9 +82,20 @@ const NavStyled = styled.nav`
     }
     .logo {
         margin: 0;
+        max-width: 200px;
+        padding-left: 20px;
+        @media (min-width: 450px) {
+            max-width: 500px;
+            padding-left: 0;
+        }
     }
-    .logo span {
+    .logo a span {
+       /* max-width: 100px; */
+    }
+    .logo a span {
         font-size: 35px;
+        max-width: 100px;
+        margin-left: 20px;
         /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         /* font-family: 'Black Ops One', cursive; */
@@ -92,7 +103,13 @@ const NavStyled = styled.nav`
 
         letter-spacing: 4px;
         @media (min-width: 658px) {
-            font-size: 48px
+            font-size: 48px;
+            margin-left: 5px;
+        }
+        
+        @media (min-width: 500px) {
+            width: 20%;
+            /* max-width: 150px */
         }
     }
     .logo-text-left a{
