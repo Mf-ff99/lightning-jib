@@ -10,13 +10,13 @@ const StyledLogo = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15px;
-        img {
+    img {
         padding: 0;
         height: 90px; 
     }
     
     a {
-        color: black !important;
+        color: white !important;
     }
 
     .logo-text-left a {
@@ -44,7 +44,8 @@ const NavStyled = styled.nav`
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
-    background-color: whitesmoke;
+    background-color: black;
+    color: white !important;
     z-index: 0;
     /* margin: 0; */
     border-bottom: 2px solid #f1f1f1;
@@ -61,18 +62,23 @@ const NavStyled = styled.nav`
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        background-color: whitesmoke;
+        /* background-color: whitesmoke; */
+        color: white !important;
     }
 
     li {
         padding: 18px 10px;
     }
 
+    a {
+        color: whitesmoke !important;
+    }
+
     .logo {
-        height: 90px;
-        width: 90px;
+        /* height: 90px;
+        width: 90px; */
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 50px;
 
     }
 
@@ -84,7 +90,7 @@ const NavStyled = styled.nav`
     }
 
     .logo-text-left a{
-        width: 120px !important;
+        /* width: 120px !important; */
     }
 
     @media (max-width: 770px) {
@@ -102,7 +108,7 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'>Home</a></span>
+                <span className="logo"><a href='/'><h2>Home</h2></a></span>
           
                 </StyledLogo>
                 

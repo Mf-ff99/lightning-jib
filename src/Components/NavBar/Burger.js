@@ -18,12 +18,13 @@ margin-top: 5px;
     /* float: right; */
     position: ${({open}) => open ? 'fixed' : 'relative'};
     transition: .5s ease-in-out;
+    /* z-index: 100; */
     div {
         width: 2rem;
         height: .25rem;
         border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({open}) => open ? 'black' : 'black'};
+        background-color: ${({open}) => open ? '#fff' : 'white'};
         transform-origin: 1px;
         transition: all .3s;
         transform: ${({open}) => open ? 'rotate(90deg)' : 'rotate(0deg)'};
@@ -33,7 +34,7 @@ margin-top: 5px;
         } 
         
         &:nth-child(2) {
-            transform: ${({open }) => open ? 'translateX(100%)' : 'translateX(0%)'};
+            transform: ${({open }) => open ? 'translateY(100%)' : 'translateY(0%)'};
             
             opacity: ${({open }) => open ? '0' : '1'};
         

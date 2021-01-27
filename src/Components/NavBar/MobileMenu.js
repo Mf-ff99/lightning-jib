@@ -13,23 +13,23 @@ const UL = styled.ul`
     // min-height: 800px;
     margin-left: 0;
     padding-left: 0;
-    z-index: 1000;
+    z-index: 100;
     overflow: hidden;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-weight: 600;
     max-width: 700px;
     padding-right: 80px;
     padding-top: 10px;
-
-    li {
+    background-color: black;
+    /* li {
         color: black !important;
         padding: 18px 10px;
-        /* min-width: 110px; */
         &:nth-child(4) {
             min-width: 120px;
-        }
-    }
+        } */
+    
 
     
 
@@ -63,15 +63,14 @@ const UL = styled.ul`
     }
 
     @media (max-width: 768px) {
-        /* display: none !important; */
-        /* min-height: 400px; */
+       
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: #0D2538;
+        background-color: black;
         position: fixed;
-        transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+        transform: ${({open}) => open ? 'translateY(0)' : 'translateY(-100%)'};
         top: 0;
         right: 0;
         height: 100vh;
@@ -86,10 +85,10 @@ const UL = styled.ul`
         /* scroll-behavior: unset; */
 
     a {
-        color: black !important;
+        color: white !important;
     }
         li {
-            color: black;
+            color: white;
         }
 
         .logo {
@@ -126,7 +125,7 @@ class MobileNav extends React.Component {
         return (
             <UL id='mobile-nav' open={open}>
             <li className="right-side-nav">
-                <a href="/work">NavItem</a>
+                <a href="/showreel">NavItem</a>
 
             </li>
             <li className="right-side-nav">

@@ -1,6 +1,7 @@
 import Main from './main'
 import Nav from './Components/NavBar/NavBar'
 import './App.css';
+import './styles/styles.css'
 
 function App() {
   return (
@@ -8,9 +9,7 @@ function App() {
       <header>
         <Nav />
       </header>
-
     <div className="App">
-
       <Main />
     </div>
     </main>
