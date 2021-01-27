@@ -141,15 +141,6 @@ div.hero h3 {
   text-shadow: 4px 4px 1px #fff;
 }
 
-@media (min-width: 1186px) {
-  div.hero {
-    float: right;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
 .background-hero {
   position: absolute;
   float: right;
@@ -162,10 +153,10 @@ div.hero h3 {
   width: 100%;
 }
 
-@media (min-width: 1186px) {
+@media (min-width: 786px) {
   .background-hero img {
     float: right;
-    width: 50%;
+    width: 30%;
   }
 }
 
