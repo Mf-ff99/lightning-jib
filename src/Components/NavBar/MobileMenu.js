@@ -16,7 +16,10 @@ const UL = styled.ul`
     padding-left: 0;
     z-index: 100;
     overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Righteous', cursive; */
+    /* font-family: 'Fugaz One', cursive; */
+font-family: 'K2D', sans-serif;
     font-weight: 600;
     max-width: 700px;
     background-color: black;
@@ -28,6 +31,12 @@ const UL = styled.ul`
     
     a {
         color: white !important;
+        transition: .5s ease-in-out;
+    }
+
+    a:hover {
+        color: gray !important;
+        transition: .5s ease-in-out;
     }
 
     .logo-text-left a {
@@ -82,7 +91,8 @@ const UL = styled.ul`
 }
 @media (min-width: 769px) {
         a {
-            font-size: 18px;
+            font-size: 20px !important;
+            /* margin-bottom: 20px !important; */
         }
     }
 `
@@ -120,7 +130,7 @@ class MobileNav extends React.Component {
                 <a href="/contact">Contact Us</a>
 
             </li>
-            <li className="right-side-nav end">
+            <li className="right-side-nav">
                 <a href="/about">About Our Team</a>
 
             </li>

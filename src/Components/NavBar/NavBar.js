@@ -39,7 +39,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 120px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -51,8 +51,11 @@ const NavStyled = styled.nav`
     color: white !important;
     z-index: 1;
     /* margin: 0; */
-    border-bottom: 2px solid #f1f1f1;
+    /* border-bottom: 2px solid #f1f1f1; */
     font-size: 18px;
+    padding: 10px;
+    opacity: .95;
+    overflow-x: hidden;
 
     .logo {
         padding: 15px 0;
@@ -77,23 +80,24 @@ const NavStyled = styled.nav`
         text-decoration: none;
         font-size: 15px;
     }
-
     .logo {
         margin: 0;
-        /* padding: 0 0 0 10px; */
     }
-
     .logo span {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 20px;
-    }
+        font-size: 35px;
+        /* font-family: 'Righteous', cursive; */
+        /* font-family: 'Monoton', cursive; */
+        /* font-family: 'Black Ops One', cursive; */
+        font-family: 'Faster One', cursive;
 
+        letter-spacing: 4px;
+        @media (min-width: 658px) {
+            font-size: 48px
+        }
+    }
     .logo-text-left a{
         /* width: 120px !important; */
     }
-
     @media (max-width: 770px) {
         justify-content: space-between;
         flex-direction: row;
@@ -113,7 +117,7 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'><h1>Lightning Jib</h1></a></span>
+                <span className="logo"><a href='/'><span>Lightning Jib</span></a></span>
           
                 </StyledLogo>
                 

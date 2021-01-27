@@ -6,9 +6,24 @@
 .hero{
     // @include flexCenter();
     // background: $primaryBG;
-    font-size: 300px;
+    // font-size: 300px;
     // height: 100vh;
+    z-index: 1;
 }
+
+main {
+    background: transparent !important;
+    overflow-x: hidden;
+}
+
+.root {
+    overflow-x: hidden;
+}
+
+.App {
+    background-color: transparent;
+    overflow-x: hidden;
+  }
 
 .krIRUZ {
     z-index: 1 !important;
@@ -16,5 +31,52 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    // background-color: white;
+    background: transparent !important;
 }
+
+body {
+    // overflow-x: hidden;
+    background: transparent !important;
+}
+
+.App {
+    /* Location of the image */
+    background-image: url(/src/assets/images/lj-closeup.jpg);
+    // z-index: 2;
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    // background-color:whitesmoke;
+    opacity: .8;
+    
+    /* SHORTHAND CSS NOTATION
+     * background: url(background-photo.jpg) center center cover no-repeat fixed;
+     */
+  }
+  
+  /* For mobile devices */
+  @media only screen and (max-width: 767px) {
+    .App {
+      /* The file size of this background image is 93% smaller
+       * to improve page load speed on mobile internet connections */
+    //   background-image: url(images/background-photo-mobile-devices.jpg);
+    background-image: url(/src/assets/images/lj-closeup.jpg);
+    }
+      }
+
+      
+
