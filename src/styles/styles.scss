@@ -40,17 +40,19 @@ html {
     font-family: 'Open Sans', sans-serif;
     // background-color: white;
     background: transparent !important;
-    overflow-y: scroll;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
-    overflow: hidden;
+    // overflow: hidden;
     // overflow-x: hidden;
-    overflow-y: scroll;
     background: transparent !important;
     min-height: 100vh;
+    height: 100%;
     // overscroll-behavior: none;
     // overflow-y: hidden;
+    overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
 }
 
