@@ -22,7 +22,7 @@ main {
 }
 
 .root {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .App {
@@ -44,12 +44,15 @@ html {
 body {
     // overflow-x: hidden;
     background: transparent !important;
-    overscroll-behavior-y: none;
+    overscroll-behavior: none;
+    // overflow-y: hidden;
 }
 
 .App {
     /* Location of the image */
     background-image: url(/src/assets/images/lightning-background.jpg);
+    // overflow: hidden;
+    scroll-behavior: none;
     // z-index: 2;
     
     /* Image is centered vertically and horizontally at all times */
@@ -80,7 +83,7 @@ body {
       /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
     //   background-image: url(images/background-photo-mobile-devices.jpg);
-    background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-image: url(/src/assets/images/lightning-background.jpg);
     }
       }
 

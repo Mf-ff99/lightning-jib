@@ -242,7 +242,7 @@ div.image-left {
   margin-top: 100px;
   z-index: 5;
   height: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 div.image-left p {
@@ -343,7 +343,7 @@ div.video-block:before {
   position: absolute;
   margin-bottom: 20px;
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-color: black;
   z-index: -1;
   opacity: .5;
@@ -389,7 +389,6 @@ footer {
   background-color: black;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  opacity: .9;
   color: white;
   padding: 5px 10px 5px 10px;
   z-index: 100;
@@ -418,7 +417,7 @@ main {
 }
 
 .root {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .App {
@@ -437,12 +436,13 @@ html {
 
 body {
   background: transparent !important;
-  overscroll-behavior-y: none;
+  overscroll-behavior: none;
 }
 
 .App {
   /* Location of the image */
   background-image: url(/src/assets/images/lightning-background.jpg);
+  scroll-behavior: none;
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Image doesn't repeat */
@@ -464,7 +464,7 @@ body {
   .App {
     /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
-    background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-image: url(/src/assets/images/lightning-background.jpg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -47,7 +47,7 @@ const NavStyled = styled.nav`
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
-    background-color: #333;
+    background-color: black;
     color: white !important;
     z-index: 1;
     /* margin: 0; */
