@@ -619,7 +619,7 @@ body {
 }
 
 .fixed-bg {
-  overscroll-behavior: contain;
+  overscroll-behavior: none;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
