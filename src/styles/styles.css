@@ -595,6 +595,7 @@ body {
   background: transparent !important;
   min-height: 100vh;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .App {
