@@ -628,7 +628,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 110vh;
   min-width: 100vw;
   color: #FFFFEA;
   text-align: center;
