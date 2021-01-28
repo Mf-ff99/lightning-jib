@@ -61,7 +61,7 @@ export default function Hero() {
                 <div className="fixed-bg bg-3">
                 <div>
     <h1>Gimbal Quick-Release Technology</h1>
-    <p>flying your favorite camera package has never been easier</p>
+    <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>
         </div>
   </div>
   
