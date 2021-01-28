@@ -40,11 +40,11 @@ html {
     font-family: 'Open Sans', sans-serif;
     // background-color: white;
     background: transparent !important;
-    overflow: hidden;
     overflow-y: scroll;
 }
 
 body {
+    overflow: hidden;
     // overflow-x: hidden;
     overflow-y: scroll;
     background: transparent !important;
