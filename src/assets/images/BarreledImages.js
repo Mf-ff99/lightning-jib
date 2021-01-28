@@ -4,9 +4,11 @@ import LJInStudio from './lj-in-studio.jpg'
 import OutdoorLJ from './outdoor-lj.jpg'
 import LJBlackWhite from './lj-bw.jpg'
 import LightningBG from './lightning-background.jpg'
+import LJSkew from './lj-skew.jpg'
 
 const images = {
     LJCloseup,
+    LJSkew,
     LJHero,
     LJInStudio,
     OutdoorLJ,

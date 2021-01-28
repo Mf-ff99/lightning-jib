@@ -63,7 +63,8 @@ body {
   /* first section */
   
   .bg-1 {
-    background-image: url(/src/assets/images/lightning-background.jpg);
+    background-image: url(/src/assets/images/lj-skew.jpg);
+    // background-image: url(/src/assets/images/lightning-background.jpg);
   }
   
   /* third section */
@@ -85,21 +86,40 @@ body {
     background-position: center center;
     min-height: 100vh; 
     width: 100%;
-    color: white;
+    // color: white;
+    color: #FFFFEA;
     text-align: center;
     display: table;
     opacity: .8;
+    div {
+        height: 100vh;
+        min-height: 800px;
+        @include flexCenter(column);
+        align-items: center;
+    }
+    div h1 {
+    }
+    div p {
+        max-width: 450px;
+    }
   }
   
   .fixed-bg h1 {
     display: table-cell;
     vertical-align: middle;
+    // color: #EAEAEA;
+    font-size: 35px;
+    @media (min-width: 658px){
+        font-size: 60px;
+    }
   }
   
   .scroll-bg {
     background-color: #0f0f0a;
-    padding: 10px 70px;
-    min-height: 500px;
+    padding: 10px 30px;
+    min-height: 55
+    0px;
+    height: 100vh;
     font-size: 15px;
     color: whitesmoke;
     @include flexCenter(column);
@@ -113,10 +133,16 @@ body {
         }
         max-width: 450px;
     }
+    div h1 {
+        @media (min-width: 658px) {
+            padding: 0 0 0 50px;
+        }
+        
+    }
 
     .video-container {
-        max-width: 200px;
-        height: 100%;
+        max-width: 250px;
+        // height: 100%;
         width: 100%;
         @media (min-width: 658px) {
             max-width: 450px;
@@ -130,6 +156,7 @@ body {
 
     @media (min-width: 658px) {
         flex-direction: row;
+        padding: 20px 70px;
         img {
             max-width: 350px;
         }
