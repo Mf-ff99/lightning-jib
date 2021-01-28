@@ -204,7 +204,8 @@ div.info-block div.image-container {
 }
 
 div.info-block p {
-  max-width: 500px;
+  max-width: 450px;
+  font-size: 20px;
   color: white;
 }
 
@@ -295,6 +296,11 @@ div.video-block p {
 
 div.video-block iframe {
   z-index: 5;
+  max-width: 600px;
+}
+
+div.video-block iframe > div {
+  max-width: 600px;
 }
 
 div.video-block:before {
@@ -307,10 +313,6 @@ div.video-block:before {
   z-index: -1;
   opacity: .5;
   overflow-x: hidden;
-}
-
-div.video-block .image-container {
-  width: 90% !important;
 }
 
 @media (min-width: 658px) {
@@ -349,8 +351,8 @@ footer {
   padding: 5px 10px 5px 10px;
   z-index: 100;
   font-size: 12px;
-  -webkit-box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 10px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 0px white;
+          box-shadow: 10px 0px white;
 }
 
 @media (min-width: 658px) {
