@@ -587,11 +587,11 @@ main {
 
 html {
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
   background: transparent !important;
 }
 
 body {
+  overflow: hidden;
   background: transparent !important;
   min-height: 100vh;
   overflow-y: scroll;

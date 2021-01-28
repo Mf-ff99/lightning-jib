@@ -38,12 +38,12 @@ main {
 
 html {
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
     // background-color: white;
     background: transparent !important;
 }
 
 body {
+    overflow: hidden;
     // overflow-x: hidden;
     background: transparent !important;
     min-height: 100vh;
