@@ -90,11 +90,12 @@ body, html {
     background-attachment: fixed;
     top: 0;
     left: 0;
-    // background-repeat: no-repeat;
+    background-color: #333;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    min-height: 1000px; 
+    // min-height: 1000px; 
     width: 100%;
     z-index: -1;
     // color: white;
