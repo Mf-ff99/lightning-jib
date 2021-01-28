@@ -597,7 +597,7 @@ body {
   overflow-y: scroll;
 }
 
-main {
+.App {
   overflow-y: scroll;
 }
 
