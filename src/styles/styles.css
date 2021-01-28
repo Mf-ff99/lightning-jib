@@ -625,7 +625,8 @@ body, html {
 .fixed-bg {
   overscroll-behavior: none;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
