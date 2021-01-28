@@ -50,6 +50,10 @@ body {
     // overscroll-behavior: none;
     // overflow-y: hidden;
 }
+
+body, html {
+    height: 100vh;
+}
   
   // background scroll styles
 
@@ -87,7 +91,7 @@ body {
     background-size: cover;
     background-position: center center;
     min-height: 100vh; 
-    width: 100%;
+    min-width: 100vw;
     // color: white;
     color: #FFFFEA;
     text-align: center;

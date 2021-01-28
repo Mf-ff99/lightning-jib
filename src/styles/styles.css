@@ -595,6 +595,10 @@ body {
   min-height: 100vh;
 }
 
+body, html {
+  height: 100vh;
+}
+
 .wrapper {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
@@ -625,7 +629,7 @@ body {
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
-  width: 100%;
+  min-width: 100vw;
   color: #FFFFEA;
   text-align: center;
   display: table;
