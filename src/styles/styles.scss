@@ -38,7 +38,7 @@ main {
 
 html {
     font-family: 'Open Sans', sans-serif;
-    // overflow-x: hidden;
+    overflow: hidden;
     // background-color: white;
     background: transparent !important;
 }
@@ -49,6 +49,8 @@ body {
     min-height: 100vh;
     // overscroll-behavior: none;
     // overflow-y: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
 body, html {
@@ -93,6 +95,7 @@ body, html {
     background-color: #333;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 100vh;
     background-position: center center;
     height: 100vh;
     // min-height: 1000px; 
