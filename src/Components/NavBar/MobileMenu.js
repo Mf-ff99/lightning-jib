@@ -23,7 +23,7 @@ const UL = styled.ul`
 font-family: 'K2D', sans-serif;
     font-weight: 600;
     max-width: 700px;
-    background-color: black;
+    /* background-color: black; */
     img {
         padding: 0;
         height: 90px;

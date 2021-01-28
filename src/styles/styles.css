@@ -17,7 +17,6 @@ nav {
           flex-direction: row;
   list-style: none;
   /* width: 90%; */
-  background-color: whitesmoke;
   width: auto;
   z-index: 1500;
   font-size: large;
@@ -173,6 +172,7 @@ div.info-block {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 100px;
   align-items: center;
   height: 500px;
   padding: 30px 10px 30px 10px;
@@ -201,6 +201,7 @@ div.info-block div.image-container {
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
+  max-width: 400px;
 }
 
 div.info-block p {
@@ -217,7 +218,7 @@ div.info-block p {
             flex-direction: row;
   }
   div.info-block div.image-container img {
-    max-width: 50%;
+    max-width: 450px;
   }
 }
 
@@ -225,27 +226,35 @@ div.info-block:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 700px;
   background-color: black;
   z-index: -1;
   opacity: .5;
 }
 
-div.white-block {
+@media (min-width: 868px) {
+  div.info-block:before {
+    height: 500px;
+  }
+}
+
+div.image-left {
+  margin-top: 100px;
   z-index: 5;
   height: 500px;
   margin-bottom: 20px;
 }
 
-div.white-block p {
+div.image-left p {
   color: white !important;
+  padding: 0 5px 0 50px;
 }
 
-div.white-block img {
-  max-height: 400px;
+div.image-left img {
+  max-height: 400px !important;
 }
 
-div.white-block:before {
+div.image-left:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -253,6 +262,18 @@ div.white-block:before {
   background-color: black;
   z-index: -1;
   opacity: .5;
+}
+
+@media (max-width: 868px) {
+  div.image-left:before {
+    height: 700px;
+  }
+}
+
+@media (max-width: 868px) {
+  div.image-left {
+    margin-top: 200px;
+  }
 }
 
 div.image-right {
@@ -288,6 +309,7 @@ div.video-block {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-content: center;
 }
 
 div.video-block p {
@@ -299,8 +321,21 @@ div.video-block iframe {
   max-width: 600px;
 }
 
-div.video-block iframe > div {
+div.video-block .video-container div > div {
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.video-block:before {
@@ -315,7 +350,15 @@ div.video-block:before {
   overflow-x: hidden;
 }
 
-@media (min-width: 658px) {
+div.video-block .video-container {
+  width: 100% !important;
+}
+
+div.video-block .video-container {
+  max-width: 600px;
+}
+
+@media (min-width: 868px) {
   div.video-block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -351,8 +394,8 @@ footer {
   padding: 5px 10px 5px 10px;
   z-index: 100;
   font-size: 12px;
-  -webkit-box-shadow: 10px 0px white;
-          box-shadow: 10px 0px white;
+  -webkit-box-shadow: 10px 10px 10px 12px #333;
+          box-shadow: 10px 10px 10px 12px #333;
 }
 
 @media (min-width: 658px) {
@@ -363,6 +406,10 @@ footer {
 
 .hero {
   z-index: 1;
+}
+
+header {
+  background-color: transparent;
 }
 
 main {
@@ -394,7 +441,7 @@ body {
 
 .App {
   /* Location of the image */
-  background-image: url(/src/assets/images/lj-closeup.jpg);
+  background-image: url(/src/assets/images/lightning-background.jpg);
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
   /* Image doesn't repeat */

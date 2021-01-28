@@ -20,7 +20,7 @@ export default function Hero() {
         
 
         <div className='info-block video-block'>
-                    <div className='image-container'>
+                    <div className='video-container'>
                         <ReactPlayer
                         url='https://www.youtube.com/watch?v=O2UzCdbg1UM&feature=youtu.be'
                         playing={false}

@@ -47,15 +47,16 @@ const NavStyled = styled.nav`
     flex-direction: row;
     list-style: none;
     /* width: 90%; */
-    background-color: black;
+    background-color: #333;
     color: white !important;
     z-index: 1;
     /* margin: 0; */
     /* border-bottom: 2px solid #f1f1f1; */
     font-size: 18px;
-    padding: 10px;
+    /* padding: 10px; */
     opacity: .95;
     overflow-x: hidden;
+    box-shadow: 10px 10px 12px #333;
 
     .logo {
         padding: 15px 0;
@@ -118,12 +119,23 @@ const NavStyled = styled.nav`
     @media (max-width: 770px) {
         justify-content: space-between;
         flex-direction: row;
-        padding: 10px;
+        /* padding: 10px; */
         width: 100vw;
     }
     @media (min-width: 480px) {
         flex-direction: column;
     } 
+
+    /* ::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 150px;
+        background-color: black;
+        z-index: -1;
+        opacity: .5;
+    } */
 `;
 
 export default class Nav extends React.Component {

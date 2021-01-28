@@ -12,6 +12,10 @@
     z-index: 1;
 }
 
+header {
+    background-color: transparent;
+}
+
 main {
     background: transparent !important;
     overflow-x: hidden;
@@ -44,7 +48,7 @@ body {
 
 .App {
     /* Location of the image */
-    background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-image: url(/src/assets/images/lightning-background.jpg);
     // z-index: 2;
     
     /* Image is centered vertically and horizontally at all times */
