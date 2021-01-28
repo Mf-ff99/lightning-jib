@@ -169,10 +169,10 @@ div.hero h3 {
             align-items: flex-end;
   }
   div.hero h2 {
-    font-size: 50px;
+    font-size: 100px;
   }
   div.hero h3 {
-    font-size: 35px;
+    font-size: 55px;
     max-width: 320px;
     padding-right: 30%;
   }
@@ -628,7 +628,7 @@ body {
   color: #FFFFEA;
   text-align: center;
   display: table;
-  opacity: .8;
+  opacity: .9;
 }
 
 .fixed-bg div {
