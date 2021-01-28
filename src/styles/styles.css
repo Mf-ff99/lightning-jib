@@ -51,7 +51,6 @@ nav ul li {
 
 nav ul li.right-side-nav {
   color: black;
-  font-size: 24px;
 }
 
 .right-side-nav {
@@ -111,6 +110,7 @@ div.hero {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
   width: 100%;
   right: 0;
   top: 0;
@@ -118,16 +118,19 @@ div.hero {
   align-items: center;
   color: white;
   letter-spacing: 1px;
-  z-index: 1 !important;
+  z-index: 0 !important;
   height: 100%;
   min-height: 500px;
   padding: 0 0 10% 0;
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Monoton', cursive; */
 }
 
 div.hero h2 {
+  font-family: 'Monoton', cursive;
   top: 0;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -139,12 +142,24 @@ div.hero h2:nthChild(1) {
 }
 
 div.hero h3 {
-  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Monoton', cursive;
 }
 
 @media (min-width: 658px) {
   div.hero {
-    font-size: 50px;
     float: right;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
@@ -153,8 +168,16 @@ div.hero h3 {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  div.hero h2, div.hero h3 {
-    padding: 0 20% 0 0%;
+  div.hero h2 {
+    font-size: 50px;
+  }
+  div.hero h3 {
+    font-size: 35px;
+    max-width: 320px;
+    padding-right: 30%;
+  }
+  div.hero h2 {
+    padding: 0 20% 0 20%;
   }
 }
 
@@ -399,12 +422,15 @@ footer {
 
 @media (min-width: 658px) {
   footer {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
-.hero {
-  z-index: 1;
+.contact h2 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 header {
@@ -414,10 +440,6 @@ header {
 main {
   background: transparent !important;
   overflow-x: hidden;
-}
-
-.root {
-  overflow: hidden;
 }
 
 .App {
@@ -436,12 +458,132 @@ html {
 
 body {
   background: transparent !important;
-  overscroll-behavior: none;
+  min-height: 100vh;
 }
 
-.App {
-  /* Location of the image */
+.wrapper {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+/* first section */
+.bg-1 {
   background-image: url(/src/assets/images/lightning-background.jpg);
+}
+
+/* third section */
+.bg-2 {
+  background-image: url(/src/assets/images/lj-hero.jpg);
+}
+
+/* fifth section */
+.bg-3 {
+  background-image: url(/src/assets/images/lj-closeup.jpg);
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
+  opacity: .8;
+}
+
+.fixed-bg h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.scroll-bg {
+  background-color: #0f0f0a;
+  padding: 10px 70px;
+  min-height: 500px;
+  font-size: 15px;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+}
+
+.scroll-bg img {
+  max-width: 250px;
+}
+
+.scroll-bg p {
+  max-width: 450px;
+}
+
+@media (min-width: 658px) {
+  .scroll-bg p {
+    padding: 0 0 0 50px;
+  }
+}
+
+.scroll-bg .video-container {
+  max-width: 200px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 658px) {
+  .scroll-bg .video-container {
+    max-width: 450px;
+    height: 350px;
+  }
+}
+
+.scroll-bg .video-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100%;
+}
+
+@media (min-width: 658px) {
+  .scroll-bg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .scroll-bg img {
+    max-width: 350px;
+  }
+}
+
+.contact {
+  /* Location of the image */
+  background-image: url(/src/assets/images/lj-closeup.jpg);
+  min-height: 100vh;
   scroll-behavior: none;
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -454,6 +596,7 @@ body {
   background-size: cover;
   /* Pick a solid background color that will be displayed while the background image is loading */
   opacity: .8;
+  z-index: -1;
   /* SHORTHAND CSS NOTATION
      * background: url(background-photo.jpg) center center cover no-repeat fixed;
      */
@@ -461,7 +604,7 @@ body {
 
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
-  .App {
+  .contact {
     /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
     background-image: url(/src/assets/images/lightning-background.jpg);

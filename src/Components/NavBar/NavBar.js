@@ -46,15 +46,10 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
-    /* width: 90%; */
     background-color: black;
     color: white !important;
     z-index: 1;
-    /* margin: 0; */
-    /* border-bottom: 2px solid #f1f1f1; */
-    font-size: 18px;
-    /* padding: 10px; */
-    opacity: .95;
+    opacity: .98;
     overflow-x: hidden;
     box-shadow: 10px 10px 12px #333;
 
@@ -79,7 +74,7 @@ const NavStyled = styled.nav`
     a {
         color: whitesmoke !important;
         text-decoration: none;
-        font-size: 15px;
+        /* font-size: 12px; */
     }
     .logo {
         margin: 0;
@@ -94,17 +89,16 @@ const NavStyled = styled.nav`
        /* max-width: 100px; */
     }
     .logo a span {
-        font-size: 35px;
+        font-size: 30px;
         max-width: 100px;
         margin-left: 20px;
         /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         /* font-family: 'Black Ops One', cursive; */
         font-family: 'Faster One', cursive;
-
         letter-spacing: 4px;
         @media (min-width: 658px) {
-            font-size: 48px;
+            font-size: 43px;
             margin-left: 5px;
         }
         
@@ -125,17 +119,6 @@ const NavStyled = styled.nav`
     @media (min-width: 480px) {
         flex-direction: column;
     } 
-
-    /* ::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        top: 0;
-        height: 150px;
-        background-color: black;
-        z-index: -1;
-        opacity: .5;
-    } */
 `;
 
 export default class Nav extends React.Component {

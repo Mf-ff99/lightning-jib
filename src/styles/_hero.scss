@@ -6,6 +6,7 @@
 
 div.hero {
     @include flexCenter(column);
+    position: absolute;
     width: 100%;
     right: 0;
     top: 0;
@@ -13,32 +14,46 @@ div.hero {
     align-items: center;
     color: white;
     letter-spacing: 1px;
-    z-index: 1 !important;
+    z-index: 0 !important;
     height: 100%;
     min-height: 500px;
     padding: 0 0 10% 0;
-    h2 {
-        top: 0;
-        font-weight: 600;
-        font-size: 50px;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        // text-shadow: 3px 3px 2px #fff;
-        &:nthChild(1) {
-            padding-right: 100px;
+    /* font-family: 'Righteous', cursive; */
+        /* font-family: 'Monoton', cursive; */
+        h2 {
+            // font-family: 'Faster One', cursive;
+            font-family: 'Monoton', cursive;
+            top: 0;
+            font-weight: 600;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            // text-shadow: 3px 3px 2px #fff;
+            &:nthChild(1) {
+                padding-right: 100px;
+            }
         }
-    }
-
-    h3 {
-        font-size: 25px;
+        
+        h3 {
+            @include flexCenter(column);
+            font-family: 'Monoton', cursive;
+        // font-size: 25px;
     }
     @media (min-width: 658px) { 
-        font-size: 50px;
+        // font-size: 50px;
         float: right;
         justify-content: center !important;
         align-items: flex-end;
-        h2, h3 {
-            padding: 0 20% 0 0%;
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 35px;
+            max-width: 320px;
+            padding-right: 30%;
+        }
+        h2 {
+            padding: 0 20% 0 20%;
         }
     }
 }
@@ -169,6 +184,9 @@ div.video-block {
 .video-container {
     max-width: 600px;
 }
+
+// Fixed Background/Scroll styles
+
 @media (min-width: 868px) {
     iframe {
         width: 80%;

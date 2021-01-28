@@ -75,11 +75,11 @@ font-family: 'K2D', sans-serif;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
-        font-size: 25px;
         opacity: .8;
-    a {
-        color: white !important;
-        font-size: 18px;
+        a {
+            font-size: 18px;
+            color: white !important;
+        /* font-size: 18px; */
     }
     li {
         color: white;
@@ -98,7 +98,7 @@ font-family: 'K2D', sans-serif;
 }
 @media (min-width: 769px) {
         a {
-            font-size: 20px !important;
+            font-size: 22px !important;
             /* margin-bottom: 20px !important; */
         }
     }

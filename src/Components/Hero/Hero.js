@@ -8,18 +8,19 @@ export default function Hero() {
 
     return (
         <>
-            <Animated animationIn='fadeIn' animationDuration={800} animationDelay={500}>
+        <div className='wrapper'>
+            {/* <Animated animationIn='fadeIn' animationDuration={800} animationDelay={500}> */}
+                <div className='fixed-bg bg-1'>
+                    {/* <img src={images.LJCloseup} alt='Lightning Jib' /> */}
+                </div>
                 <div className='hero'>
                     <h2>Lightning</h2>
                     <h2>Jib</h2>
                     <h3>Innovation In Motion</h3>
                 </div>
-                <div className='background-hero'>
-                    {/* <img src={images.LJCloseup} alt='Lightning Jib' /> */}
-                </div>
         
 
-        <div className='info-block video-block'>
+        <div className='scroll-bg'>
                     <div className='video-container'>
                         <ReactPlayer
                         url='https://www.youtube.com/watch?v=O2UzCdbg1UM&feature=youtu.be'
@@ -29,12 +30,15 @@ export default function Hero() {
                         width='100%'
                         // height='100%'
                         />
-                    </div>
+                    </div> 
                     <p>
                         The Lightning Jib utilizes a custom quick-release system that allows for easily transitioning the camera package from jib to handheld with ease.
             </p>
                 </div>
-        <div className='info-block white-block image-right'>
+                <div class="fixed-bg bg-2">
+    {/* <h1>Fixed Background scrolling</h1> */}
+  </div>
+        <div className='scroll-bg'>
                     <div className='image-container'>
                         <img src={images.LJBlackWhite} alt='Lightning Jib Outdoors' />
                     </div>
@@ -42,7 +46,10 @@ export default function Hero() {
                         The Lightning Jib utilizes a custom quick-release system that allows for jib to handheld shot-transitions with ease.
             </p>
                 </div>
-                <div className='info-block image-left'>
+                <div class="fixed-bg bg-3">
+    {/* <h1>Fixed Background scrolling</h1> */}
+  </div>
+                <div className='scroll-bg'>
                     <div className='image-container'>
                         <img src={images.LJInStudio} alt='Lightning Jib Outdoors' />
                     </div>
@@ -51,7 +58,8 @@ export default function Hero() {
             </p>
                 </div>
 
-            </Animated>
+            {/* </Animated> */}
+            </div>
         </>
     )
 
