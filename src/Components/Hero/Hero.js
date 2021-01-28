@@ -36,7 +36,7 @@ export default function Hero() {
                         />
                     </div> 
                     <p>
-                        The Lightning Jib utilizes a custom quick-release system that allows for easily transitioning the camera package from jib to handheld with ease.
+                        The Lightning Jib utilizes a custom quick-release system that allows for an effortless, smooth transitions between jib and handheld operation.
             </p>
                 </div>
                 <div className="fixed-bg bg-2">
