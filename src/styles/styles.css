@@ -496,6 +496,77 @@ footer {
   }
 }
 
+.learn-more p {
+  max-width: 400px;
+  font-size: 18px !important;
+}
+
+.learn-more .page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+  padding-top: 100px;
+  height: 100%;
+}
+
+.learn-more .page-wrapper:before {
+  margin-top: 250px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  z-index: -1;
+  opacity: .5;
+  border-radius: 4px;
+}
+
+@media (min-width: 868px) {
+  .learn-more .page-wrapper:before {
+    height: 600px;
+    width: 650px;
+  }
+}
+
+.learn-more p {
+  font-size: 25px;
+}
+
+.learn-more h2 {
+  font-size: 25px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.learn-more span {
+  font-size: 20px;
+}
+
+@media (min-width: 658px) {
+  .learn-more h2 {
+    font-size: 35px;
+  }
+  .learn-more span {
+    font-size: 25px;
+  }
+  .learn-more p {
+    font-size: 30px;
+  }
+}
+
 header {
   background-color: transparent;
 }
@@ -643,7 +714,7 @@ body {
   }
 }
 
-.contact {
+.contact, .learn-more {
   /* Location of the image */
   background-image: url(/src/assets/images/lj-closeup.jpg);
   min-height: 100vh;
@@ -667,7 +738,7 @@ body {
 
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
-  .contact {
+  .contact, .learn-more {
     /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
     background-image: url(/src/assets/images/lj-closeup.jpg);

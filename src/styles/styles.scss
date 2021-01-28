@@ -4,6 +4,7 @@
 @import 'variables';
 @import 'footer';
 @import 'contact';
+@import 'learnMore';
 
 .hero{
     // @include flexCenter();
@@ -136,7 +137,7 @@ body {
   }
 
 
-.contact {
+.contact, .learn-more {
     /* Location of the image */
     background-image: url(/src/assets/images/lj-closeup.jpg);
     min-height: 100vh;
@@ -169,7 +170,7 @@ body {
   
   /* For mobile devices */
   @media only screen and (max-width: 767px) {
-    .contact {
+    .contact, .learn-more {
       /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
     //   background-image: url(images/background-photo-mobile-devices.jpg);

@@ -9,15 +9,19 @@ export default function Hero() {
     return (
         <>
         <div className='wrapper'>
-            {/* <Animated animationIn='fadeIn' animationDuration={800} animationDelay={500}> */}
+            <Animated animationIn='slideInRight' animationDuration={900} animationDelay={100}>
                 <div className='fixed-bg bg-1'>
                     {/* <img src={images.LJCloseup} alt='Lightning Jib' /> */}
                 </div>
                 <div className='hero'>
                     <h2>Lightning</h2>
                     <h2>Jib</h2>
+            {/* <Animated animationIn='fadeIn' animationDuration={800} animationDelay={500}> */}
+
                     <h3>Innovation In Motion</h3>
+                {/* </Animated> */}
                 </div>
+            </Animated>
         
 
         <div className='scroll-bg'>
@@ -35,7 +39,7 @@ export default function Hero() {
                         The Lightning Jib utilizes a custom quick-release system that allows for easily transitioning the camera package from jib to handheld with ease.
             </p>
                 </div>
-                <div class="fixed-bg bg-2">
+                <div className="fixed-bg bg-2">
     {/* <h1>Fixed Background scrolling</h1> */}
   </div>
         <div className='scroll-bg'>
@@ -46,7 +50,7 @@ export default function Hero() {
                         The Lightning Jib utilizes a custom quick-release system that allows for jib to handheld shot-transitions with ease.
             </p>
                 </div>
-                <div class="fixed-bg bg-3">
+                <div className="fixed-bg bg-3">
     {/* <h1>Fixed Background scrolling</h1> */}
   </div>
                 <div className='scroll-bg'>

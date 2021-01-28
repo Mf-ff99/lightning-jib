@@ -1,0 +1,54 @@
+@import 'mixins';
+.learn-more {
+    p {
+        max-width: 400px;
+        font-size: 18px !important;
+    }
+
+
+.page-wrapper {
+    @include flexCenter(column);
+    color: whitesmoke;
+    padding-top: 100px;
+    height: 100%;
+    &:before {
+        margin-top: 250px;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        z-index: -1;
+        opacity: .5;
+        border-radius: 4px;
+        @media (min-width: 868px) {
+            height: 600px;
+            width: 650px;
+        }
+    }
+}
+p {
+    font-size: 25px;
+}
+h2 {
+    font-size: 25px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+span {
+    font-size: 20px;
+}
+
+@media (min-width: 658px) {
+    h2 {
+        font-size: 35px;
+    }
+    span {
+        font-size: 25px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+
+}
