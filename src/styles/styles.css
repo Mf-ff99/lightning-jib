@@ -588,13 +588,14 @@ main {
 html {
   font-family: 'Open Sans', sans-serif;
   background: transparent !important;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 body {
-  overflow: hidden;
+  overflow-y: scroll;
   background: transparent !important;
   min-height: 100vh;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
