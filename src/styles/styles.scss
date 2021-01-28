@@ -44,6 +44,7 @@ html {
 body {
     // overflow-x: hidden;
     background: transparent !important;
+    overscroll-behavior-y: none;
 }
 
 .App {

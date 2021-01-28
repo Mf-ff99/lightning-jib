@@ -437,6 +437,7 @@ html {
 
 body {
   background: transparent !important;
+  overscroll-behavior-y: none;
 }
 
 .App {
