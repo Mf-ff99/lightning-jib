@@ -578,7 +578,6 @@ main {
 
 .App {
   background-color: transparent;
-  overflow: hidden;
 }
 
 .krIRUZ {
@@ -589,19 +588,12 @@ html {
   font-family: 'Open Sans', sans-serif;
   background: transparent !important;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
   background: transparent !important;
   min-height: 100vh;
   height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.App {
-  overflow-y: scroll;
 }
 
 body, html {
@@ -640,6 +632,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100vh;
+  min-height: 100%;
   background-position: center center;
   height: 100vh;
   width: 100%;
@@ -673,6 +666,17 @@ body, html {
   max-width: 450px;
 }
 
+.fixed-bg:before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  min-height: 50vh;
+  background-color: black;
+  z-index: -1;
+  opacity: .5;
+}
+
 .fixed-bg h1 {
   display: table-cell;
   vertical-align: middle;
@@ -688,7 +692,6 @@ body, html {
 .scroll-bg {
   background-color: #0f0f0a;
   padding: 10px 30px;
-  min-height: 55 0px;
   height: 100vh;
   font-size: 15px;
   color: whitesmoke;
