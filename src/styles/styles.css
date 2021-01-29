@@ -614,7 +614,6 @@ body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  /* prevent overscroll bounce*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
@@ -668,7 +667,6 @@ body, html {
 
 .fixed-bg div {
   height: 100vh;
-  min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,7 +684,7 @@ body, html {
 }
 
 .fixed-bg div p {
-  max-width: 450px;
+  max-width: 350px;
 }
 
 .fixed-bg:before {
@@ -694,20 +692,29 @@ body, html {
   position: absolute;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
+  background-color: #333;
   z-index: -5;
-  opacity: .3;
+  opacity: .6;
+}
+
+@media (min-width: 658px) {
+  .fixed-bg p {
+    max-width: 500px;
+  }
 }
 
 .fixed-bg h1 {
   display: table-cell;
   vertical-align: middle;
-  font-size: 35px;
+  overflow: wrap;
+  max-width: 320px;
+  font-size: 25px;
 }
 
 @media (min-width: 658px) {
   .fixed-bg h1 {
+    max-width: 800px;
     font-size: 60px;
   }
 }
@@ -715,8 +722,7 @@ body, html {
 .scroll-bg {
   background-color: #0f0f0a;
   padding: 10px 30px;
-  height: 100vh;
-  font-size: 15px;
+  height: 60vh;
   color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;

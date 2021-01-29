@@ -68,9 +68,6 @@ body {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    // position: fixed;
-    /* prevent overscroll bounce*/
-    // background-color: lightgreen;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
@@ -131,14 +128,14 @@ body, html {
     opacity: .9;
     div {
         height: 100vh;
-        min-height: 800px;
+        // min-height: 800px;
         @include flexCenter(column);
         align-items: center;
     }
     div h1 {
     }
     div p {
-        max-width: 450px;
+        max-width: 350px;
     }
     &:before {
         content: "";
@@ -146,13 +143,21 @@ body, html {
         left: 0;
         // bottom: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         // min-height: 50vh;
-        background-color: black;
+        background-color: #333;
         z-index: -5;
-        opacity: .3;
+        opacity: .6;
         @media (min-width: 868px) {
             // height: 500px;
+        }
+    }
+    @media (min-width: 658px) {
+        // h1 {
+        //     font-size: 35px;
+        // }
+        p {
+            max-width: 500px;
         }
     }
   }
@@ -160,9 +165,12 @@ body, html {
   .fixed-bg h1 {
     display: table-cell;
     vertical-align: middle;
+    overflow: wrap;
+    max-width: 320px;
     // color: #EAEAEA;
-    font-size: 35px;
+    font-size: 25px;
     @media (min-width: 658px){
+        max-width: 800px;
         font-size: 60px;
     }
   }
@@ -170,8 +178,8 @@ body, html {
   .scroll-bg {
     background-color: #0f0f0a;
     padding: 10px 30px;
-    height: 100vh;
-    font-size: 15px;
+    height: 60vh;
+    // font-size: 15px;
     color: whitesmoke;
     @include flexCenter(column);
     justify-content: center;
