@@ -1,0 +1,11 @@
+@import 'mixins';
+
+.about-our-team {
+    @include flexCenter(column);
+    p {
+        max-width: 280px;
+        @media (min-width: 658px) {
+            max-width: 450px;
+        }
+    }
+}

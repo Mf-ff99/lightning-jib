@@ -1,5 +1,6 @@
 @import 'mixins';
 .learn-more {
+    @include flexCenter(column);
     p {
         max-width: 400px;
         font-size: 18px !important;
@@ -9,10 +10,10 @@
 .page-wrapper {
     @include flexCenter(column);
     color: whitesmoke;
-    padding-top: 100px;
+    // padding-top: 100px;
     height: 100%;
     &:before {
-        margin-top: 250px;
+        // margin-top: 250px;
         content: "";
         position: absolute;
         width: 100%;
@@ -24,6 +25,12 @@
         @media (min-width: 868px) {
             height: 600px;
             width: 650px;
+        }
+    }
+    p {
+        max-width: 280px;
+        @media (min-width: 658px) {
+            max-width: 450px;
         }
     }
 }

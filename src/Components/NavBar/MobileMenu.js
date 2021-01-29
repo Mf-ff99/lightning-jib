@@ -144,7 +144,7 @@ class MobileNav extends React.Component {
 
             </li>
             <li className="right-side-nav">
-                <Link to="/about">About Our Team</Link>
+                <Link to="/about-our-team">About Our Team</Link>
 
             </li>
         </UL>

@@ -2,20 +2,22 @@
 
 .contact {
     height: 100%;
+    @include flexCenter(column);
     .page-wrapper {
         @include flexCenter(column);
         color: whitesmoke;
-        padding-top: 100px;
+        // padding-top: 100px;
         height: 100%;
+       
         &:before {
-            margin-top: 250px;
+            // margin-top: 250px;
             content: "";
             position: absolute;
             width: 100%;
             height: 600px;
             background-color: black;
             z-index: -1;
-            opacity: .5;
+            opacity: .7;
             border-radius: 4px;
             @media (min-width: 868px) {
                 height: 600px;

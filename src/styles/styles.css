@@ -517,6 +517,19 @@ footer h2:nth-child(2) {
 
 .contact {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .page-wrapper {
@@ -534,19 +547,17 @@ footer h2:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   color: whitesmoke;
-  padding-top: 100px;
   height: 100%;
 }
 
 .contact .page-wrapper:before {
-  margin-top: 250px;
   content: "";
   position: absolute;
   width: 100%;
   height: 600px;
   background-color: black;
   z-index: -1;
-  opacity: .5;
+  opacity: .7;
   border-radius: 4px;
 }
 
@@ -585,6 +596,22 @@ footer h2:nth-child(2) {
   }
 }
 
+.learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .learn-more p {
   max-width: 400px;
   font-size: 18px !important;
@@ -605,12 +632,10 @@ footer h2:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   color: whitesmoke;
-  padding-top: 100px;
   height: 100%;
 }
 
 .learn-more .page-wrapper:before {
-  margin-top: 250px;
   content: "";
   position: absolute;
   width: 100%;
@@ -625,6 +650,16 @@ footer h2:nth-child(2) {
   .learn-more .page-wrapper:before {
     height: 600px;
     width: 650px;
+  }
+}
+
+.learn-more .page-wrapper p {
+  max-width: 280px;
+}
+
+@media (min-width: 658px) {
+  .learn-more .page-wrapper p {
+    max-width: 450px;
   }
 }
 
@@ -653,6 +688,32 @@ footer h2:nth-child(2) {
   }
   .learn-more p {
     font-size: 30px;
+  }
+}
+
+.about-our-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-our-team p {
+  max-width: 280px;
+}
+
+@media (min-width: 658px) {
+  .about-our-team p {
+    max-width: 450px;
   }
 }
 
@@ -842,6 +903,23 @@ body, html {
   .scroll-bg div h1 {
     padding: 0 0 0 50px;
   }
+}
+
+.scroll-bg div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .scroll-bg .video-container {

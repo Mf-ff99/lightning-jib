@@ -5,6 +5,7 @@
 @import 'footer';
 @import 'contact';
 @import 'learnMore';
+@import 'aboutOurTeam';
 
 .hero{
     // @include flexCenter();
@@ -202,6 +203,10 @@ body, html {
             padding: 0 0 0 50px;
         }
         
+    }
+    div {
+        @include flexCenter(column);
+        text-align: center;
     }
 
     .video-container {
