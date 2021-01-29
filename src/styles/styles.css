@@ -415,9 +415,18 @@ footer {
   color: white;
   padding: 5px 10px 5px 10px;
   z-index: 100;
-  font-size: 12px;
+  font-size: 10px;
   -webkit-box-shadow: 10px 10px 10px 12px #333;
           box-shadow: 10px 10px 10px 12px #333;
+}
+
+footer h2 {
+  padding: 10px 20px 0 0;
+}
+
+footer h2:nth-child(2) {
+  max-width: 100px;
+  color: gray;
 }
 
 @media (min-width: 658px) {
@@ -596,6 +605,15 @@ body {
   min-height: 100vh;
   height: 100%;
   position: fixed;
+  /* prevent overscroll bounce*/
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.App {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   /* prevent overscroll bounce*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;

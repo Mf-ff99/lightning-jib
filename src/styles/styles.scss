@@ -64,6 +64,15 @@ body {
 }
 
 .App {
+
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    // position: fixed;
+    /* prevent overscroll bounce*/
+    // background-color: lightgreen;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 body, html {
