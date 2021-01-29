@@ -587,13 +587,18 @@ main {
 html {
   font-family: 'Open Sans', sans-serif;
   background: transparent !important;
-  height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 body {
   background: transparent !important;
   min-height: 100vh;
   height: 100%;
+  position: fixed;
+  /* prevent overscroll bounce*/
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body, html {
