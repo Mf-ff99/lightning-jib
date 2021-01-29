@@ -669,12 +669,12 @@ body, html {
 .fixed-bg:before {
   content: "";
   position: absolute;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  min-height: 50vh;
   background-color: black;
-  z-index: -1;
-  opacity: .5;
+  z-index: -5;
+  opacity: .3;
 }
 
 .fixed-bg h1 {

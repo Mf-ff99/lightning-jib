@@ -57,8 +57,6 @@ body {
 }
 
 .App {
-    // -webkit-overflow-scrolling:touch;
-    // overflow-y: scroll;
 }
 
 body, html {
@@ -129,12 +127,14 @@ body, html {
     &:before {
         content: "";
         position: absolute;
+        left: 0;
+        // bottom: 0;
         width: 100vw;
         height: 100vh;
-        min-height: 50vh;
+        // min-height: 50vh;
         background-color: black;
-        z-index: -1;
-        opacity: .5;
+        z-index: -5;
+        opacity: .3;
         @media (min-width: 868px) {
             // height: 500px;
         }
