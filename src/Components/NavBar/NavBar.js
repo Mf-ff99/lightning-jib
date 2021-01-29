@@ -49,7 +49,7 @@ const NavStyled = styled.nav`
     background-color: black;
     color: white !important;
     z-index: 1;
-    opacity: .98;
+    opacity: .95;
     overflow-x: hidden;
     box-shadow: 10px 10px 12px #333;
 

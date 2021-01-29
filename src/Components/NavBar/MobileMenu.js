@@ -78,7 +78,7 @@ font-family: 'K2D', sans-serif;
         padding: 15px 0 0 0;
         transition: .3s ease-in-out;
         z-index: 1000;
-        opacity: .8;
+        /* opacity: .8; */
         a {
             font-size: 18px;
             color: white !important;
