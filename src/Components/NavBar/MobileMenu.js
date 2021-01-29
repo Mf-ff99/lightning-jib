@@ -36,6 +36,9 @@ font-family: 'K2D', sans-serif;
     }
 
     a:hover {
+        /* position: fixed; */
+        /* left: 0; */
+
         color: gray !important;
         transition: .5s ease-in-out;
     }

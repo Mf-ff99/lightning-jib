@@ -105,6 +105,10 @@ body, html {
     background-image: url(/src/assets/images/lj-closeup.jpg);
 }
 
+  .bg-4 {
+      background-image: url(/src/assets/images/lightning-background.jpg)
+  }
+
 .fixed-bg {
     // overscroll-behavior: contain;
     overscroll-behavior: none;
@@ -135,7 +139,7 @@ body, html {
     div h1 {
     }
     div p {
-        max-width: 350px;
+        max-width: 70%;
     }
     &:before {
         content: "";
@@ -170,7 +174,7 @@ body, html {
     // color: #EAEAEA;
     font-size: 25px;
     @media (min-width: 658px){
-        max-width: 800px;
+        max-width: 600px;
         font-size: 60px;
     }
   }
@@ -178,7 +182,8 @@ body, html {
   .scroll-bg {
     background-color: #0f0f0a;
     padding: 10px 30px;
-    height: 60vh;
+    height: 90vh;
+    // position: absolute;
     // font-size: 15px;
     color: whitesmoke;
     @include flexCenter(column);
@@ -186,7 +191,7 @@ body, html {
     img {
         max-width: 250px;
     }
-    p {
+    p.image-p {
         @media (min-width: 658px) {
             padding: 0 0 0 50px;
         }

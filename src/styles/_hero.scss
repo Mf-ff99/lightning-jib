@@ -172,6 +172,13 @@ div.video-block {
         overflow-x: hidden;
 }
 
+.video-info-container {
+    @include flexCenter(column);
+    @media (min-width: 658px) {
+        flex-direction: row;
+    }
+}
+
 .video-container {
     width: 100% !important;
 }
@@ -185,6 +192,32 @@ div.video-block {
     }
     flex-direction: row;
 }
+}
+
+div.hero-info-container {
+    @include flexCenter(column);
+    flex-direction: column !important;
+    width: 100%;
+    // position: fixed;
+    div {
+        @include flexCenter(column);
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        text-align: center;
+        max-width: 320px;
+        font-size: 12px;
+        @media (min-width: 658px) {
+            font-size: 18px;
+        }
+    }
+    @media (min-width: 769px) {
+        div {   
+            padding: 20px;
+        }
+        flex-direction: row !important;
+    }
 }
 
 

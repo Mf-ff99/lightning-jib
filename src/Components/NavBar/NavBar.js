@@ -68,13 +68,14 @@ const NavStyled = styled.nav`
     }
 
     li {
-        padding: 18px 10px;
+        margin: 18px 10px;
     }
 
     a {
         color: whitesmoke !important;
         text-decoration: none;
         /* font-size: 12px; */
+        transition: .5s ease-in-out;
     }
     .logo {
         margin: 0;
