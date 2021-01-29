@@ -737,6 +737,7 @@ main {
 html {
   font-family: 'Open Sans', sans-serif;
   background: transparent !important;
+  height: 100%;
   overflow: hidden;
   width: 100%;
 }
@@ -765,6 +766,7 @@ body, html {
 
 .wrapper {
   min-height: 100vh;
+  height: 100%;
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
   word-spacing: 4px;
