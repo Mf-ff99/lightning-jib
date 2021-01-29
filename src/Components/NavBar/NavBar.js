@@ -96,7 +96,8 @@ const NavStyled = styled.nav`
         /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         /* font-family: 'Black Ops One', cursive; */
-        font-family: 'Faster One', cursive;
+        /* font-family: 'Faster One', cursive; */
+        font-family: 'Major Mono Display', monospace;
         letter-spacing: 4px;
         @media (min-width: 658px) {
             font-size: 43px;

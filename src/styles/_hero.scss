@@ -4,6 +4,13 @@
     z-index: 1;
 }
 
+div.hero-info-div {
+    min-height: 200px !important;
+    @media (min-height: 900px) {
+        min-height: 300px
+    }
+}
+
 div.hero {
     @include flexCenter(column);
     position: absolute;
@@ -16,8 +23,9 @@ div.hero {
     letter-spacing: 1px;
     z-index: 0 !important;
     height: 100%;
-    min-height: 500px;
-    padding: 0 0 10% 0;
+    min-height: 800px;
+    padding: 5% 0 0;
+    
     /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         h2 {
@@ -198,11 +206,14 @@ div.hero-info-container {
     @include flexCenter(column);
     flex-direction: column !important;
     width: 100%;
+    min-height: 800px !important;
+    // max-height: 500px;
     // position: fixed;
     div {
         @include flexCenter(column);
         align-items: center;
         justify-content: center;
+        
     }
     p {
         text-align: center;
