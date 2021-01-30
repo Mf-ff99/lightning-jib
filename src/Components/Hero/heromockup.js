@@ -1,31 +1,19 @@
-import React from 'react'
-import { Animated } from 'react-animated-css'
-import images from '../../assets/images/BarreledImages'
-import ReactPlayer from 'react-player/lazy'
-import LearnMore from '../About/LearnMore'
-
-export default function Hero() {
-
-
-    return (
-        <>
-        <div class="parallax">
-  <div class="parallax__group  group-one">
-    <div class="parallax__layer parallax__layer--back group-one bg-1">
-      
-    </div>
-    <div class="parallax__layer parallax__layer--base bg-image">
-    <div className='hero'>
+<div className='wrapper'>
+                <Animated animationIn='slideInRight' animationDuration={900} animationDelay={100}>
+                <div class="parallax__group">
+                    <div className='parallax__layer parallax__layer--back fixed-bg bg-1'>
+                        {/* <img src={images.LJCloseup} alt='Lightning Jib' /> */}
+                    </div>
+                    <div className='hero'>
                         <h2>Lightning</h2>
                         <h2>Jib</h2>
                         <h3>Innovation In Motion</h3>
                     </div>
-    </div>
-  </div>
-  <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back bg-2"></div>
-  <div class="parallax__layer parallax__layer--base blue-bg info-container parallax__video">
-  <div className='video-container'>
+                </div>
+                </Animated>
+                {/* <div class="parallax__group">
+                <div className='scroll-bg'>
+                    <div className='video-container'>
                         <ReactPlayer
                             url='https://www.youtube.com/watch?v=O2UzCdbg1UM&feature=youtu.be'
                             playing={false}
@@ -42,12 +30,13 @@ export default function Hero() {
                         </p>
 
                     </div>
-  </div>
-  </div>
-  <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back bg-3"></div>
-  <div class="parallax__layer parallax__layer--base blue-bg">
-  <div className='hero-info-container'>
+                </div>
+                </div> */}
+                <div class="parallax__group">
+                <div className="parallax__layer parallax__layer--back fixed-bg bg-2">
+                </div>
+                <div class="parallax__layer parallax__layer--base">
+                    <div className='hero-info-container'>
                         <div className='hero-info-div'>
                             <i class="fas fa-bolt fa-5x"></i>
                             <p>The Lightning Jib is built for speed and productivity. The jib can be easily transported by 1 person, making it an ideal choice for distant locations. There's nowhere this jib can't fly.</p>
@@ -62,54 +51,49 @@ export default function Hero() {
                         </div>
 
                     </div>
-                    </div>
      
-  </div>
-  <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back bg-4"></div>
-  <div class="parallax__layer parallax__layer--base blue-bg info-container">
-  <div className='image-container'>
+    </div>
+            </div>
+                {/* <div className='scroll-bg'>
+                    <div className='image-container'>
                         <img src={images.LJBlackWhite} alt='Lightning Jib Outdoors' />
                     </div>
                     <div>
                         <h1>Built by Directors, For Directors</h1>
                         <p className='image-p'>Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving cinematic crane shots has never been easier. The Lightning Jib's compact build is location-friendly and ideal remote-locations, large-scale operations, concerts, churches, and sporting events.</p>
                     </div>
-  </div>
-    ...
-  </div>
-  <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back bg-blue"></div>
-  <div class="parallax__layer parallax__layer--base info-container">
-  <div>
+                </div> */}
+                <div class="parallax__group">
+                <div className="parallax__layer parallax__layer--back fixed-bg text-overlay bg-3">
+                </div>
+                <div class="parallax__layer parallax__layer--base hero-info-container">
+                <div>
                     <h1>Gimbal Quick-Release Technology</h1>
                     <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>
                     <p>experience freedom of creativity with our one-of-a-kind gimbal-release system. Get the shots you've dreamed of.</p>
                 </div>
    
-  <div>
+    </div>
+                </div>
+                {/* <div className='scroll-bg'>
+                    <div className='image-container'>
+                        <img src={images.LJInStudio} alt='Lightning Jib Outdoors' />
+                    </div>
+                    <div>
+                        <h1>Effortless Transitions</h1>
+                        <p className='image-p'>
+                            The Lightning Jib utilizes a custom quick-release system that allows for an effortless, smooth transitions between jib and handheld operation.
+            </p>
+                    </div> */}
+                {/* </div> */}
+                <div class="parallax__group">
+                <div className='parallax__layer parallax__layer--back fixed-bg text-overlay bg-4'>
+
+                    <div>
                         <h1>Lightning Fast Transport With Ease</h1>
                         <p>flying your favorite camera package has never been easier. The Lightning Jib can be transported and operated by one person with a 'insert dimensions here' case</p>
                     </div>
-    
-  </div>
-  </div>
-  {/* <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back"></div>
-  <div class="parallax__layer parallax__layer--base info-container">
-  </div>
-    
-  </div> */}
-  {/* <div class="parallax__group">
-  <div class="parallax__layer parallax__layer--back"></div>
-  <div class="parallax__layer parallax__layer--base">
+                </div>
 
-  </div>
-    ...
-  </div> */}
-</div>
-        </>
-    )
-
-}
-
+            </div>
+            </div>

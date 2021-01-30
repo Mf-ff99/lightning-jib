@@ -80,31 +80,128 @@ body, html {
   
   // background scroll styles
 
-.wrapper {
-    min-height: 100vh;
+
+//   <div class="wrapper">
+//   <div class="parallax__layer parallax__layer--back fixed-div">
+//     ...
+//   </div>
+//   <div class="parallax__layer parallax__layer--base">
+//     ...
+//   </div>
+// </div>
+
+.parallax__video {
+    margin-top: 13% !important;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    // background-color: #040b22;
+    background-color: #384a61;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer--base {
+
+    @include flexCenter(column);
+    transform: translateZ(0);
+    // background-color: #384a61;
+    z-index: 10;
+    // margin-top: 6%;
+    div {
+        // backgound-color: white;
+    }
+    @media (min-width: 768px) {
+        // max-height: 50%;
+        flex-direction: row;
+    }
+}
+.parallax__layer--back {
+    // background-color: #040b22;
+    background-color: #384a61;
+        transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(2);
     position: relative;
+    z-index: -1;
+    margin-top: 620px;
+    // max-height: 80vh;
+    // background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // max-height: 100vh;
+    width: 100%;
     height: 100%;
+
+    // background-color: white;
+  }
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    color: #FFFFEA;
+    // @include flexCenter(row);
+    // border: 1px solid red;
+    .group-one {
+            margin-top: 0 !important;
+            .parallax__layer--base {
+                margin-top: 0 !important;
+            }
+        
+    }
+    .blue-bg {
+        // background-color: #040b22;
+        margin-top: 10%;
+        background-color: #384a61;
+        min-height: fit-content;
+        p {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+        h1 {
+            margin-block-start: 0em;
+    margin-block-end: 0em;
+        }
+        @media (min-width: 768px) {
+            max-height: 50%;
+        }
+            
+    }
+    // transform: translate3d(700px, 0, -800px) rotateY(30deg);
+  }
+
+.wrapper {
+    // min-height: 100vh;
+    position: relative;
+    perspective: 1px;
+    height: 100vh;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    // height: 100%;
     font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
     word-spacing: 4px;
     letter-spacing: 1px;
     transform-style: preserve-3d;
 
-    // background-attachment: scroll;
-//     @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) {
-// .wrapper {
-
-//     background-attachment: initial;
-
-// }
-// }
 }
   /* first section */
-  
+  .bg-2, .bg-3, .bg-4 {
+    //   margin-top: 10%;
+  }
   .bg-1 {
-    background-image: url(/src/assets/images/lj-skew.jpg);
+    // background-image: url(/src/assets/images/lj-skew.jpg);
+    background-image: url(/src/assets/images/lightning-background.jpg);
+    opacity: .7;
     // background-image: url(/src/assets/images/lightning-background.jpg);
   }
   
@@ -112,13 +209,17 @@ body, html {
   
   .bg-2 {
     // background-image: url(/src/assets/images/outdoor-lj.jpg);
-    background-color: #040b22;
+    // background-color: #040b22;
+    background-color: #384a61;
+    @media (min-width: 768px) {
+        max-height: 50% !important;
+    }
   }
   
   /* fifth section */
   
   .bg-3 {
-    // background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-image: url(/src/assets/images/lj-closeup.jpg);
 }
 
   .bg-4 {
@@ -129,6 +230,7 @@ body, html {
     div {
         min-height: 800px !important;
         min-width: 100vw;
+        color: #FFFFEA;
         // border: 1px solid red;
     }
 }
@@ -136,17 +238,18 @@ body, html {
     // overscroll-behavior: contain;
     @include flexCenter(column);
     // overscroll-behavior: none;
-    background-attachment: scroll;
+    // background-attachment: scroll;
     @media (min-width: 768px) {
-          background-attachment: fixed;
+        //   background-attachment: fixed;
       }
     top: 0;
     left: 0;
     // background-color: #333;
-    background-color: #040b22;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    // background-color: #040b22;
+    background-color: #384a61;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
     // max-height: 100vh;
     min-height: 800px;
     height: 100%;
@@ -156,8 +259,8 @@ body, html {
     // color: white;
     color: #FFFFEA;
     text-align: center;
-    display: table;
-    opacity: .9;
+    // display: table;
+    opacity: 1;
     div {
         height: 100vh;
         min-height: 800px;
@@ -170,21 +273,21 @@ body, html {
     div p {
         max-width: 70%;
     }
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        // bottom: 0;
-        width: 100vw;
-        height: 100%;
-        min-height: 800px;
-        // background-color: #97a9e4;
-        z-index: -5;
-        opacity: .6;
-        @media (min-width: 868px) {
-            // height: 500px;
-        }
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     // bottom: 0;
+    //     width: 100vw;
+    //     height: 100%;
+    //     min-height: 800px;
+    //     // background-color: #97a9e4;
+    //     z-index: -5;
+    //     opacity: .6;
+    //     @media (min-width: 868px) {
+    //         // height: 500px;
+    //     }
+    // }
     @media (min-width: 658px) {
         // h1 {
         //     font-size: 35px;
