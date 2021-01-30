@@ -5,6 +5,7 @@ import OutdoorLJ from './outdoor-lj.jpg'
 import LJBlackWhite from './lj-bw.jpg'
 import LightningBG from './lightning-background.jpg'
 import LJSkew from './lj-skew.jpg'
+import LightningBoltGraphic from './lightning-bolt.png'
 
 const images = {
     LJCloseup,
@@ -14,6 +15,7 @@ const images = {
     OutdoorLJ,
     LJBlackWhite,
     LightningBG,
+    LightningBoltGraphic,
 }
 
 export default images

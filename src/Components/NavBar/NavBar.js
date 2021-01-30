@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Burger from './Burger'
+import images from '../../assets/images/BarreledImages'
 
 const StyledLogo = styled.div`
 
@@ -81,6 +82,48 @@ const NavStyled = styled.nav`
         margin: 0;
         max-width: 200px;
         padding-left: 20px;
+        &:before {
+            content: "";
+            /* border: 1px solid red; */
+            width: 100%;
+            color: transparent;
+            height: 100%;
+            position: absolute;
+            background-image: url(${images.LightningBoltGraphic});
+            background-repeat: no-repeat;
+            left: 1%;
+            top: 0px;
+            opacity: .8;
+            z-index: 1;
+            zoom: .2;
+            @media (min-width: 658px) {
+                zoom: .39;
+                left: 10%;
+            }
+        }
+        &:after {
+            content: "";
+            /* border: 1px solid red; */
+            width: 100%;
+            color: transparent;
+            height: 100%;
+            position: absolute;
+            background-image: url(${images.LightningBoltGraphic});
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            transform: scaleX(-1);
+            /* transform: skewX(35deg); */
+            top: 0px;
+            right: 10%;
+            z-index: 1;
+            opacity: .8;
+            zoom: .15;
+            @media (min-width: 658px) {
+                right: 10%;
+                zoom: .28
+            }
+        }
+
         @media (min-width: 450px) {
             max-width: 500px;
             padding-left: 0;
