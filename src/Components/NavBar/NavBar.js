@@ -40,7 +40,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 140px;
+    height: 120px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
