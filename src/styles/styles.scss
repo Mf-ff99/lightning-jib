@@ -87,16 +87,16 @@ body, html {
     line-height: 1.5;
     word-spacing: 4px;
     letter-spacing: 1px;
-    background-attachment: scroll;
-    @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-.wrapper {
+    // background-attachment: scroll;
+//     @media only screen 
+// and (min-device-width : 768px) 
+// and (max-device-width : 1024px) {
+// .wrapper {
 
-    background-attachment: initial;
+//     background-attachment: initial;
 
-}
-}
+// }
+// }
 }
   /* first section */
   
@@ -133,6 +133,9 @@ and (max-device-width : 1024px) {
     @include flexCenter(column);
     overscroll-behavior: none;
     background-attachment: fixed;
+    @media only screen and (max-device-width: 768px) {
+          background-attachment: scroll;
+      }
     top: 0;
     left: 0;
     background-color: #333;
