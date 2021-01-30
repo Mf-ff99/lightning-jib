@@ -801,6 +801,10 @@ body, html {
   height: 100%;
 }
 
+.parallax__video {
+  margin-top: 13% !important;
+}
+
 .parallax {
   -webkit-perspective: 1px;
           perspective: 1px;

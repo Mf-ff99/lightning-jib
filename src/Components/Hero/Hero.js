@@ -24,7 +24,7 @@ export default function Hero() {
   </div>
   <div class="parallax__group">
   <div class="parallax__layer parallax__layer--back bg-2"></div>
-  <div class="parallax__layer parallax__layer--base blue-bg info-container">
+  <div class="parallax__layer parallax__layer--base blue-bg info-container parallax__video">
   <div className='video-container'>
                         <ReactPlayer
                             url='https://www.youtube.com/watch?v=O2UzCdbg1UM&feature=youtu.be'
