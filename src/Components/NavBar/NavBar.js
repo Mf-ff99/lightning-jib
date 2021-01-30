@@ -47,13 +47,17 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
-    background-color: #02081a;
+    /* background-color: #02081a; */
+    /* background-color: #161825; */
+    /* background-color: #566271; */
+    background-color: #384a61;
+    /* background-color: #41628b; */
     color: white !important;
     z-index: 1;
     opacity: .95;
     overflow-x: hidden;
-    box-shadow: 10px 10px 12px #333;
-    border-bottom: 1px solid #333;
+    /* box-shadow: 10px 10px 12px #333; */
+    /* border-bottom: 1px solid #333; */
     /* &:after {
   content:'';
   position: absolute;
@@ -96,9 +100,8 @@ const NavStyled = styled.nav`
         max-width: 200px;
         padding-left: 20px;
        
-        &:before {
+        /* &:before {
             content: "";
-            /* border: 1px solid red; */
             width: 100%;
             color: transparent;
             height: 100%;
@@ -117,19 +120,19 @@ const NavStyled = styled.nav`
             @media (min-width: 968px) {
                 left: 45%
             }
-        }
-        &:after {
+        } */
+        /* &:after {
             content: "";
-            /* border: 1px solid red; */
+
             width: 100%;
             color: transparent;
             height: 100%;
             position: absolute;
             background-image: url(${images.LightningBoltGraphic});
             background-repeat: no-repeat;
-            /* background-size: cover; */
+    
             transform: scaleX(-1);
-            /* transform: skewX(35deg); */
+ 
             top: 0px;
             right: 10%;
             z-index: -1;
@@ -142,7 +145,7 @@ const NavStyled = styled.nav`
             @media (min-width: 968px) {
                 right: 45%
             }
-        }
+        } */
 
         @media (min-width: 450px) {
             max-width: 500px;
