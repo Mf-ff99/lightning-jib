@@ -47,13 +47,25 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
-    background-color: black;
+    background-color: #02081a;
     color: white !important;
     z-index: 1;
     opacity: .95;
     overflow-x: hidden;
     box-shadow: 10px 10px 12px #333;
     border-bottom: 1px solid #333;
+    /* &:after {
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px black;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+} */
 
     .logo {
         padding: 15px 0;
@@ -137,9 +149,9 @@ const NavStyled = styled.nav`
             padding-left: 0;
         }
         @media (min-width: 658px) {
-            border: 1px solid white;
+            /* border: 1px solid white;
         border-radius: 5px;
-        margin-top: 20px;
+        margin-top: 20px; */
         }
     }
     .logo a span {

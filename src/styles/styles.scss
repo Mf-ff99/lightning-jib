@@ -108,13 +108,14 @@ body, html {
   /* third section */
   
   .bg-2 {
-    background-image: url(/src/assets/images/outdoor-lj.jpg);
+    // background-image: url(/src/assets/images/outdoor-lj.jpg);
+    background-color: #040b22;
   }
   
   /* fifth section */
   
   .bg-3 {
-    background-image: url(/src/assets/images/lj-closeup.jpg);
+    // background-image: url(/src/assets/images/lj-closeup.jpg);
 }
 
   .bg-4 {
@@ -138,7 +139,8 @@ body, html {
       }
     top: 0;
     left: 0;
-    background-color: #333;
+    // background-color: #333;
+    background-color: #040b22;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -173,7 +175,7 @@ body, html {
         width: 100vw;
         height: 100%;
         min-height: 800px;
-        background-color: #333;
+        background-color: #040b22;
         z-index: -5;
         opacity: .6;
         @media (min-width: 868px) {
@@ -204,7 +206,8 @@ body, html {
   }
   
   .scroll-bg {
-    background-color: #0f0f0a;
+    // background-color: #0f0f0a;
+    background-color: #02081a;
     padding: 10px 30px;
     height: 90vh;
     min-height: 800px;
