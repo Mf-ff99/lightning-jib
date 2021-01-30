@@ -96,7 +96,7 @@ const NavStyled = styled.nav`
             left: 1%;
             top: 0px;
             opacity: .5;
-            z-index: 1;
+            z-index: -1;
             zoom: .2;
             @media (min-width: 658px) {
                 zoom: .39;
@@ -120,7 +120,7 @@ const NavStyled = styled.nav`
             /* transform: skewX(35deg); */
             top: 0px;
             right: 10%;
-            z-index: 1;
+            z-index: -1;
             opacity: .62;
             zoom: .15;
             @media (min-width: 658px) {
