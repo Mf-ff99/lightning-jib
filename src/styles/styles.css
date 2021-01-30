@@ -823,23 +823,27 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overscroll-behavior: none;
-  background-attachment: fixed;
+  background-attachment: scroll;
   top: 0;
   left: 0;
   background-color: #333;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
-  min-height: 800px;
   background-position: center center;
-  height: 100vh;
+  min-height: 800px;
+  height: 100%;
   width: 100%;
   z-index: -1;
   color: #FFFFEA;
   text-align: center;
   display: table;
   opacity: .9;
+}
+
+@media (min-width: 768px) {
+  .fixed-bg {
+    background-attachment: fixed;
+  }
 }
 
 .fixed-bg div {
