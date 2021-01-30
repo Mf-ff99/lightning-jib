@@ -40,21 +40,18 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="fixed-bg bg-2">
-                    {/* <div>
-                    <h1>Gimbal Quick-Release Technology</h1>
-                        <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>                    </div>  */}
                     <div className='hero-info-container'>
                         <div className='hero-info-div'>
                             <i class="fas fa-bolt fa-5x"></i>
-                            <p>The Lightning Jib is built for speed and productivity. Light enough to be set up and transported anywhere by 1 person, there's nowhere this jib can't fly.</p>
+                            <p>The Lightning Jib is built for speed and productivity. The jib can be easily transported by 1 person, making it an ideal choice for distant locations. There's nowhere this jib can't fly.</p>
                         </div>
                         <div className='hero-info-div'>
                             <i class="fas fa-camera fa-5x"></i>
-                            <p>Fly your camera package of choice in a matter of minutes. Put your lens wherever you want, cinematic crane shots are always at your fingertips. </p>
+                            <p>Fly your camera package of choice in a matter of minutes. Put your lens where you want, cinematic crane shots are always at your fingertips. The freedom is yours.</p>
                         </div>
                         <div className='hero-info-div'>
                             <i class="fas fa-wifi fa-5x"></i>
-                            <p>Control the DJI RS2 wirelessly with joystick and cinema wheels. Not a jib op? You can guide the camera with an Android/iOS device of your choice.</p>
+                            <p>Control the DJI RS2 wirelessly with joystick and cinema wheels. Not a jib op? You can guide the camera with an Android or iOS device of your choice.</p>
                         </div>
 
                     </div>
@@ -65,13 +62,14 @@ export default function Hero() {
                     </div>
                     <div>
                         <h1>Built by Directors, For Directors</h1>
-                        <p className='image-p'>The Lightning Jib is a lightweight alternative for jib-shots. Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving dynamic shots has never been simpler. Control the Ronin RS2 package using joystick, wheels, or a wirelessly connected smart-device.</p>
+                        <p className='image-p'>Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving cinematic crane shots has never been easier. The Lightning Jib's compact build is location-friendly and ideal remote-locations, large-scale operations, concerts, churches, and sporting events.</p>
                     </div>
                 </div>
                 <div className="fixed-bg text-overlay bg-3">
                     <div>
                         <h1>Gimbal Quick-Release Technology</h1>
                         <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>
+                        <p>experience freedom of creativity with our one-of-a-kind gimbal-release system. Get the shots you've dreamed of.</p>
                     </div>
                 </div>
                 <div className='scroll-bg'>
