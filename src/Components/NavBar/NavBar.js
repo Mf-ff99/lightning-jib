@@ -40,7 +40,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 140px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,7 @@ const NavStyled = styled.nav`
     opacity: .95;
     overflow-x: hidden;
     box-shadow: 10px 10px 12px #333;
+    border-bottom: 1px solid #333;
 
     .logo {
         padding: 15px 0;
@@ -82,6 +83,7 @@ const NavStyled = styled.nav`
         margin: 0;
         max-width: 200px;
         padding-left: 20px;
+       
         &:before {
             content: "";
             /* border: 1px solid red; */
@@ -93,12 +95,15 @@ const NavStyled = styled.nav`
             background-repeat: no-repeat;
             left: 1%;
             top: 0px;
-            opacity: .8;
+            opacity: .5;
             z-index: 1;
             zoom: .2;
             @media (min-width: 658px) {
                 zoom: .39;
                 left: 10%;
+            }
+            @media (min-width: 968px) {
+                left: 45%
             }
         }
         &:after {
@@ -116,17 +121,25 @@ const NavStyled = styled.nav`
             top: 0px;
             right: 10%;
             z-index: 1;
-            opacity: .8;
+            opacity: .62;
             zoom: .15;
             @media (min-width: 658px) {
                 right: 10%;
                 zoom: .28
+            }
+            @media (min-width: 968px) {
+                right: 45%
             }
         }
 
         @media (min-width: 450px) {
             max-width: 500px;
             padding-left: 0;
+        }
+        @media (min-width: 658px) {
+            border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 20px;
         }
     }
     .logo a span {
