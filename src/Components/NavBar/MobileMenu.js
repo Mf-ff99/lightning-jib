@@ -62,12 +62,13 @@ const UL = styled.ul`
         right: 0;
         
     }
-    @media (max-width: 480px) {
+    @media (max-width: 880px) {
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: black;
+        /* background-color: black; */
+        background-color: #1f334d;
         position: fixed;
         transform: ${({open}) => open ? 'translateY(0)' : 'translateY(-100%)'};
         top: 0;
@@ -82,7 +83,9 @@ const UL = styled.ul`
         /* opacity: .8; */
         a {
             font-size: 18px;
-            color: white !important;
+            /* color: white !important;
+             */
+            color: #FFFFEA;
         /* font-size: 18px; */
     }
     li {

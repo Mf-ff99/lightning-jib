@@ -23,7 +23,7 @@ margin-top: 5px;
         height: .25rem;
         border: 1px solid black;
         border-radius: 10px;
-        background-color: ${({ open }) => open ? '#fff' : 'white'};
+        background-color: ${({ open }) => open ? '#FFFFEA;' : '#FFFFEA;'};
         transform-origin: 1px;
         transition: all .3s;
         transform: ${({ open }) => open ? 'rotate(90deg)' : 'rotate(0deg)'};
@@ -44,7 +44,7 @@ margin-top: 5px;
         }
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: 880px) {
         display: none !important;
     }
 `;

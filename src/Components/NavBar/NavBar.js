@@ -32,7 +32,7 @@ const StyledLogo = styled.div`
     @media (min-width: 768px) {
         /* display: none !important; */
         /* color: red !important; */
-        flex-direction: column;
+        flex-direction: row;
     }
 `;
 
@@ -54,7 +54,7 @@ const NavStyled = styled.nav`
     /* background-color: #384a61; */
     background-color: #1f334d;
     /* background-color: #41628b; */
-    color: white !important;
+    color: #FFFFEA !important;
     z-index: 1;
     opacity: .95;
     overflow-x: hidden;
@@ -92,7 +92,8 @@ const NavStyled = styled.nav`
     }
 
     a {
-        color: whitesmoke !important;
+        /* color: whitesmoke !important; */
+        color: #FFFFEA !important;
         text-decoration: none;
         /* font-size: 12px; */
         transition: .5s ease-in-out;
@@ -192,7 +193,7 @@ const NavStyled = styled.nav`
         width: 100vw;
     }
     @media (min-width: 480px) {
-        flex-direction: column;
+        /* flex-direction: column; */
     } 
 `;
 
