@@ -727,6 +727,12 @@ footer h2:nth-child(2) {
   border-radius: 4px;
 }
 
+@media (min-width: 868px) {
+  .learn-more .page-wrapper:before {
+    height: 600px;
+  }
+}
+
 .learn-more .page-wrapper p {
   max-width: 280px;
 }
