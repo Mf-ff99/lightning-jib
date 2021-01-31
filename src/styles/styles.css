@@ -1025,61 +1025,6 @@ body, html {
   color: #FFFFEA;
 }
 
-.fixed-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 0;
-  left: 0;
-  background-color: #384a61;
-  min-height: 800px;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  color: #FFFFEA;
-  text-align: center;
-  opacity: 1;
-}
-
-.fixed-bg div {
-  height: 100vh;
-  min-height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-items: center;
-}
-
-.fixed-bg div p {
-  max-width: 70%;
-}
-
-@media (min-width: 658px) {
-  .fixed-bg p {
-    max-width: 500px;
-  }
-}
-
 .fixed-bg h1 {
   display: table-cell;
   vertical-align: middle;
