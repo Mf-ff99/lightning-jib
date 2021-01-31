@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Burger from './Burger'
 import images from '../../assets/images/BarreledImages'
-import history from './history'
 
 const StyledLogo = styled.div`
 
@@ -31,8 +30,6 @@ const StyledLogo = styled.div`
     }
 
     @media (min-width: 768px) {
-        /* display: none !important; */
-        /* color: red !important; */
         flex-direction: row;
     }
 `;
@@ -104,62 +101,11 @@ const NavStyled = styled.nav`
         margin: 0;
         max-width: 200px;
         padding-left: 20px;
-       
-        /* &:before {
-            content: "";
-            width: 100%;
-            color: transparent;
-            height: 100%;
-            position: absolute;
-            background-image: url(${images.LightningBoltGraphic});
-            background-repeat: no-repeat;
-            left: 1%;
-            top: 0px;
-            opacity: .5;
-            z-index: -1;
-            zoom: .2;
-            @media (min-width: 658px) {
-                zoom: .39;
-                left: 10%;
-            }
-            @media (min-width: 968px) {
-                left: 45%
-            }
-        } */
-        /* &:after {
-            content: "";
-
-            width: 100%;
-            color: transparent;
-            height: 100%;
-            position: absolute;
-            background-image: url(${images.LightningBoltGraphic});
-            background-repeat: no-repeat;
-    
-            transform: scaleX(-1);
- 
-            top: 0px;
-            right: 10%;
-            z-index: -1;
-            opacity: .62;
-            zoom: .15;
-            @media (min-width: 658px) {
-                right: 10%;
-                zoom: .28
-            }
-            @media (min-width: 968px) {
-                right: 45%
-            }
-        } */
-
         @media (min-width: 450px) {
             max-width: 500px;
             padding-left: 0;
         }
         @media (min-width: 658px) {
-            /* border: 1px solid white;
-        border-radius: 5px;
-        margin-top: 20px; */
         }
     }
     .logo a span {
@@ -176,7 +122,8 @@ const NavStyled = styled.nav`
         font-family: 'Major Mono Display', monospace;
         letter-spacing: 4px;
         @media (min-width: 658px) {
-            font-size: 43px;
+            font-size: 33px;
+            padding-left: 20px;
             margin-left: 5px;
             
         }
