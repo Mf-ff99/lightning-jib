@@ -8,6 +8,7 @@ margin-top: 5px;
     height: 2rem;
     top: ${({ open }) => open ? '30px' : '10px'};
     right: 30px;
+    padding-bottom: 20px;
     margin-right: 10px;
     display: flex;
     justify-content: space-around;

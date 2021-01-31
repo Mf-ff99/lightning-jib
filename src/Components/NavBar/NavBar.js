@@ -38,7 +38,7 @@ const NavStyled = styled.nav`
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 85px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -57,21 +57,6 @@ const NavStyled = styled.nav`
     z-index: 1;
     opacity: .95;
     overflow-x: hidden;
-    /* box-shadow: 10px 10px 12px #333; */
-    /* border-bottom: 1px solid #333; */
-    /* &:after {
-  content:'';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -50px;
-  width: 0;
-  height: 0;
-  border-top: solid 50px black;
-  border-left: solid 50px transparent;
-  border-right: solid 50px transparent;
-} */
-
     .logo {
         padding: 15px 0;
     }
