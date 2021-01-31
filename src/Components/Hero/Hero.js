@@ -8,10 +8,10 @@ export default function Hero() {
 
     return (
         <>
-            <div class="parallax">
-                <div class="parallax__group  group-one">
-                    <div class="parallax__layer parallax__layer--back group-one bg-1">
-                    <div class="fullscreen-bg">
+            <div className="parallax">
+                <div className="parallax__group  group-one">
+                    <div className="parallax__layer parallax__layer--back group-one bg-1">
+                    <div className="fullscreen-bg">
                     <div dangerouslySetInnerHTML={{ __html: `
         <video
           loop
@@ -24,7 +24,7 @@ export default function Hero() {
                 {/* <video src={Background} type="video/mp4" autoPlay loop muted playsInLine style={{zIndex: '100', height: '100%'}}/> */}
                 </div>
                     </div>
-                    <div class="parallax__layer parallax__layer--base bg-image">
+                    <div className="parallax__layer parallax__layer--base bg-image">
                         <div className='hero'>
                             <h2>Lightning</h2>
                             <h2>Jib</h2>
@@ -32,9 +32,9 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back bg-2"></div>
-                    <div class="parallax__layer parallax__layer--base blue-bg info-container parallax__video">
+                <div className="parallax__group">
+                    <div className="parallax__layer parallax__layer--back bg-2"></div>
+                    <div className="parallax__layer parallax__layer--base blue-bg info-container parallax__video">
                         <div className='video-container'>
                             <ReactPlayer
                                 url='https://www.youtube.com/watch?v=O2UzCdbg1UM&feature=youtu.be'
@@ -54,9 +54,9 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back bg-3"></div>
-                    <div class="parallax__layer parallax__layer--base blue-bg">
+                <div className="parallax__group">
+                    <div className="parallax__layer parallax__layer--back bg-3"></div>
+                    <div className="parallax__layer parallax__layer--base blue-bg">
                         <div className='hero-info-container'>
                             <div className='hero-info-div'>
                                 <i class="fas fa-bolt fa-3x"></i>
@@ -75,9 +75,9 @@ export default function Hero() {
                     </div>
 
                 </div>
-                <div class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back bg-4"></div>
-                    <div class="parallax__layer parallax__layer--base blue-bg info-container">
+                <div className="parallax__group">
+                    <div className="parallax__layer parallax__layer--back bg-4"></div>
+                    <div className="parallax__layer parallax__layer--base blue-bg info-container">
                         <div className='image-container'>
                             <img src={images.LJBlackWhite} alt='Lightning Jib Outdoors' />
                         </div>
@@ -88,9 +88,9 @@ export default function Hero() {
                     </div>
     
   </div>
-                <div class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back bg-blue"></div>
-                    <div class="parallax__layer parallax__layer--base info-container">
+                <div className="parallax__group">
+                    <div className="parallax__layer parallax__layer--back bg-blue"></div>
+                    <div className="parallax__layer parallax__layer--base info-container">
                         <div>
                             <h1>Gimbal Quick-Release Technology</h1>
                             <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>
