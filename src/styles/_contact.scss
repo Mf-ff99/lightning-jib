@@ -2,13 +2,14 @@
 
 .contact {
     height: 100%;
+    min-height: 800px;
     @include flexCenter(column);
     .page-wrapper {
         @include flexCenter(column);
         color: whitesmoke;
         // padding-top: 100px;
         height: 100%;
-       
+       min-height: 800px;
         &:before {
             // margin-top: 250px;
             content: "";

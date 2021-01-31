@@ -1,6 +1,7 @@
 @import 'mixins';
 
 .about-our-team {
+    min-height: 800px;
     @include flexCenter(column);
     p {
         font-size: 18px;

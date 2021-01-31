@@ -596,6 +596,7 @@ footer h2:nth-child(2) {
 
 .contact {
   height: 100%;
+  min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,6 +628,7 @@ footer h2:nth-child(2) {
           justify-content: center;
   color: whitesmoke;
   height: 100%;
+  min-height: 800px;
 }
 
 .contact .page-wrapper:before {
@@ -764,6 +766,7 @@ footer h2:nth-child(2) {
 }
 
 .about-our-team {
+  min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,10 +838,6 @@ body {
 
 body, html {
   height: 100%;
-}
-
-.parallax__video {
-  margin-top: 13% !important;
 }
 
 .parallax {
@@ -932,10 +931,28 @@ body, html {
 
 .parallax__group .blue-bg {
   margin-top: 10%;
-  background-color: #384a61;
+  background-color: transparent;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
+}
+
+.parallax__group .blue-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  z-index: -5;
+  opacity: .6;
+  min-height: 700px;
+}
+
+@media (min-width: 868px) {
+  .parallax__group .blue-bg:before {
+    min-height: 400px;
+  }
 }
 
 .parallax__group .blue-bg p {
@@ -979,14 +996,9 @@ body, html {
 
 /* third section */
 .bg-2 {
+  background-image: url(/src/assets/images/outdoor-lj.jpg);
   margin-top: 320px !important;
   background-color: #384a61;
-}
-
-@media (min-width: 768px) {
-  .bg-2 {
-    max-height: 50% !important;
-  }
 }
 
 /* fifth section */
