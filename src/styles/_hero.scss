@@ -60,7 +60,7 @@ div.hero {
             font-family: 'Reem Kufi', sans-serif;
             top: 0;
             font-weight: 600;
-            font-size: 40px;
+            font-size: 45px;
             margin-block-start: 0;
             margin-block-end: 0;
             &:nthChild(1) {
@@ -70,6 +70,7 @@ div.hero {
         h3 {
             @include flexCenter(column);
             // font-family: 'Monoton', cursive;
+            font-size: 30px;
             font-family: 'Reem Kufi', sans-serif;
     }
     @media (max-width: 762px) {

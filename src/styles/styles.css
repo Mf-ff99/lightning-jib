@@ -167,7 +167,7 @@ div.hero h2 {
   font-family: 'Reem Kufi', sans-serif;
   top: 0;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 45px;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -192,6 +192,7 @@ div.hero h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 30px;
   font-family: 'Reem Kufi', sans-serif;
 }
 
