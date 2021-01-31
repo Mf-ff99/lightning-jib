@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import React from 'react'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { Link } from 'react-router-dom';
-
+import { Link, Router } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import history from './history'
 
 const UL = styled.ul`
     list-style: none;
@@ -112,7 +113,7 @@ const UL = styled.ul`
     `
     const linkTarget = {
       pathname: "/",
-    //   key: uuid(),
+      key: uuidv4(),
        // we could use Math.random, but that's not guaranteed unique.
       state: {
         applied: true
@@ -120,7 +121,7 @@ const UL = styled.ul`
     };
 
 class MobileNav extends React.Component {
-    componentDidMount() {
+  ponentDidMount() {
         // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
         // Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
         // This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
@@ -131,7 +132,18 @@ class MobileNav extends React.Component {
     showTargetElement = (open) => {
           if(open = true) enableBodyScroll(this.targetElement);
          
-      } 
+      }
+      
+  
+  reloadRoute = () => {
+    // history.push("/")
+    // console.log('history pushed', history)
+    if(history.location.pathname === '/') {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+        history.push('/emtpy')
+        history.push('/')
+    }
+  }
 
     render() {
         let open = this.props.open
@@ -147,7 +159,7 @@ class MobileNav extends React.Component {
                 <a href='/tools'>NavItem</a>
             </li> */}
             <li className="right-side-nav home-nav-link">
-                <Link to={linkTarget.pathname}>Home</Link>
+                <Link onClick={this.reloadRoute()} to={'/'}>Home</Link>
             </li>
             {/* <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
