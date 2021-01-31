@@ -86,7 +86,7 @@ export default function Hero() {
                             <p className='image-p'>Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving cinematic crane shots has never been easier. The Lightning Jib's compact build is location-friendly and ideal remote-locations, large-scale operations, concerts, churches, and sporting events.</p>
                         </div>
                     </div>
-    ...
+    
   </div>
                 <div class="parallax__group">
                     <div class="parallax__layer parallax__layer--back bg-blue"></div>
