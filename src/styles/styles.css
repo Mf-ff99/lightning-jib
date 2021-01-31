@@ -846,6 +846,10 @@ body, html {
   height: 100%;
 }
 
+.parallax__video {
+  opacity: .8;
+}
+
 .parallax {
   -webkit-perspective: 1px;
           perspective: 1px;

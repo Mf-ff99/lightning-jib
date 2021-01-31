@@ -109,7 +109,14 @@ const UL = styled.ul`
             /* margin-bottom: 20px !important; */
         }
     }
-`
+    `
+    const linkTarget = {
+      pathname: "/",
+       // we could use Math.random, but that's not guaranteed unique.
+      state: {
+        applied: true
+      }
+    };
 
 class MobileNav extends React.Component {
     componentDidMount() {
@@ -124,6 +131,7 @@ class MobileNav extends React.Component {
           if(open = true) enableBodyScroll(this.targetElement);
          
       } 
+
     render() {
         let open = this.props.open
         if(open) disableBodyScroll(this.targetElement)
@@ -138,7 +146,7 @@ class MobileNav extends React.Component {
                 <a href='/tools'>NavItem</a>
             </li> */}
             <li className="right-side-nav home-nav-link">
-                <Link to='/'>Home</Link>
+                <Link to={linkTarget.pathname}>Home</Link>
             </li>
             <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
