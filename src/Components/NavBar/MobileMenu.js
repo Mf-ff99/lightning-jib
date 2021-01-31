@@ -112,6 +112,7 @@ const UL = styled.ul`
     `
     const linkTarget = {
       pathname: "/",
+    //   key: uuid(),
        // we could use Math.random, but that's not guaranteed unique.
       state: {
         applied: true
@@ -148,8 +149,11 @@ class MobileNav extends React.Component {
             <li className="right-side-nav home-nav-link">
                 <Link to={linkTarget.pathname}>Home</Link>
             </li>
-            <li className="right-side-nav">
+            {/* <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
+            </li> */}
+            <li className="right-side-nav">
+                <Link to='/learn-more'>Pricing and Details</Link>
             </li>
             <li className="right-side-nav">
                 <Link to="/contact">Contact Us</Link>
