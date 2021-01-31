@@ -63,7 +63,7 @@ const UL = styled.ul`
         right: 0;
         
     }
-    @media (max-width: 880px) {
+    @media (max-width: 960px) {
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;

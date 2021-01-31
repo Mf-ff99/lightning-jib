@@ -44,7 +44,7 @@ margin-top: 5px;
         }
     }
 
-    @media (min-width: 880px) {
+    @media (min-width: 960px) {
         display: none !important;
     }
 `;
