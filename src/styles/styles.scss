@@ -192,7 +192,6 @@ body, html {
   
   .bg-2 {
     background-image: url(/src/assets/images/outdoor-lj.jpg);
-    // background-color: #040b22;
     margin-top: 320px !important;
     background-color: #384a61;
     @media (min-width: 768px) {
@@ -218,112 +217,22 @@ body, html {
     }
 }
   
-  .fixed-bg h1 {
-    display: table-cell;
-    vertical-align: middle;
-    overflow: wrap;
-    max-width: 320px;
-    // color: #EAEAEA;
-    font-size: 25px;
-    @media (min-width: 658px){
-        max-width: 600px;
-        font-size: 60px;
-    }
-  }
-  
-  .scroll-bg {
-    // background-color: #0f0f0a;
-    background-color: #02081a;
-    padding: 10px 30px;
-    height: 90vh;
-    min-height: 800px;
-    // position: absolute;
-    // font-size: 15px;
-    color: whitesmoke;
-    @include flexCenter(column);
-    justify-content: center;
-    img {
-        max-width: 250px;
-    }
-    p.image-p {
-        @media (min-width: 658px) {
-            padding: 0 0 0 50px;
-        }
-        max-width: 450px;
-    }
-    div h1 {
-        @media (min-width: 658px) {
-            padding: 0 0 0 50px;
-        }
-        
-    }
-    div {
-        @include flexCenter(column);
-        text-align: center;
-    }
-
-    .video-container {
-        max-width: 250px;
-        // height: 100%;
-        width: 100%;
-        @media (min-width: 658px) {
-            max-width: 450px;
-            height: 350px;
-        }
-        div {
-            @include flexCenter(column);
-            max-height: 100%;
-        }
-    }
-
-    @media (min-width: 658px) {
-        flex-direction: row;
-        padding: 20px 70px;
-        img {
-            max-width: 350px;
-        }
-    }
-  }
-
-
 .contact, .learn-more {
-    /* Location of the image */
     background-image: url(/src/assets/images/lj-closeup.jpg);
     height: 100vh;
     min-height: 800px;
-    // overflow: hidden;
     scroll-behavior: none;
-    // z-index: 2;
-    
-    /* Image is centered vertically and horizontally at all times */
     background-position: center center;
-    
-    /* Image doesn't repeat */
     background-repeat: no-repeat;
-    
-    /* Makes the image fixed in the viewport so that it doesn't move when 
-       the content height is greater than the image height */
     background-attachment: fixed;
-    
-    /* This is what makes the background image rescale based on its container's size */
     background-size: cover;
-    
-    /* Pick a solid background color that will be displayed while the background image is loading */
-    // background-color:whitesmoke;
     opacity: .8;
     z-index: -1;
-    
-    /* SHORTHAND CSS NOTATION
-     * background: url(background-photo.jpg) center center cover no-repeat fixed;
-     */
   }
   
   /* For mobile devices */
   @media only screen and (max-width: 767px) {
     .contact, .learn-more {
-      /* The file size of this background image is 93% smaller
-       * to improve page load speed on mobile internet connections */
-    //   background-image: url(images/background-photo-mobile-devices.jpg);
     background-image: url(/src/assets/images/lj-closeup.jpg);
     background-position: scroll;
     @media (hover: none) {
