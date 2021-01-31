@@ -47,10 +47,12 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
+    padding-bottom: 10px;
     /* background-color: #02081a; */
     /* background-color: #161825; */
     /* background-color: #566271; */
-    background-color: #384a61;
+    /* background-color: #384a61; */
+    background-color: #1f334d;
     /* background-color: #41628b; */
     color: white !important;
     z-index: 1;

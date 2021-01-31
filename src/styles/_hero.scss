@@ -11,6 +11,33 @@ div.hero-info-div {
     }
 }
 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    object-fit: fill;
+    min-height: 600px;
+    min-width: 320px;
+    opacity: .68;
+    video {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        min-width: 320px;
+        @media (min-width: 658px) {
+            object-fit: fill;
+        }
+    }
+}
+
 div.hero {
     @include flexCenter(column);
     position: absolute;
@@ -29,7 +56,8 @@ div.hero {
     /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         h2 {
-            font-family: 'Monoton', cursive;
+            // font-family: 'Monoton', cursive;
+            font-family: 'Reem Kufi', sans-serif;
             top: 0;
             font-weight: 600;
             font-size: 40px;
@@ -41,7 +69,8 @@ div.hero {
         }
         h3 {
             @include flexCenter(column);
-            font-family: 'Monoton', cursive;
+            // font-family: 'Monoton', cursive;
+            font-family: 'Reem Kufi', sans-serif;
     }
     @media (max-width: 762px) {
         // justify-content: center !important;
@@ -109,7 +138,7 @@ div.info-block {
         position: absolute;
         width: 100%;
         height: 700px;
-        background-color: black;
+        // background-color: black;
         z-index: -1;
         opacity: .5;
         @media (min-width: 868px) {
@@ -120,8 +149,9 @@ div.info-block {
 
 .info-container {
     @include flexCenter(column);
+    text-align: center;
     p {
-        max-width: 300px;
+        max-width: 280px;
     }
     h1 {
         padding: 15px;
@@ -137,6 +167,9 @@ div.info-block {
     }
     @media (min-width: 658px) {
         flex-direction: row;
+        p {
+            max-width: 320px;
+        }
         img {
             max-width: 400px;
         }
@@ -173,7 +206,7 @@ div.video-block {
         margin-bottom: 20px;
         width: 100%;
         height: 550px;
-        background-color: black;
+        // background-color: black;
         z-index: -1;
         opacity: .5;
         overflow-x: hidden;
@@ -212,6 +245,9 @@ div.hero-info-container {
     // position: fixed;
     color: #FFFFEA;
     // border: 1px solid red;
+    i {
+        padding: 10px;
+    }
     div {
         @include flexCenter(column);
         align-items: center;
@@ -219,9 +255,10 @@ div.hero-info-container {
     }
     p {
         text-align: center;
-        max-width: 320px;
-        font-size: 12px;
+        max-width: 280px;
+        font-size: 15px;
         @media (min-width: 658px) {
+            max-width: 300px;
             font-size: 18px;
         }
     }

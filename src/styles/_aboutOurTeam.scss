@@ -3,6 +3,7 @@
 .about-our-team {
     @include flexCenter(column);
     p {
+        font-size: 18px;
         max-width: 280px;
         @media (min-width: 658px) {
             max-width: 450px;
