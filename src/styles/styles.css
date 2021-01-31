@@ -829,7 +829,6 @@ body {
   min-height: 100vh;
   height: 100%;
   position: fixed;
-  /* prevent overscroll bounce*/
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }

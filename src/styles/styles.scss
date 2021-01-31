@@ -30,7 +30,6 @@ main {
 
 .App {
     background-color: transparent;
-    // overflow: hidden;
   }
 
 .krIRUZ {
@@ -39,33 +38,22 @@ main {
 
 html {
     font-family: 'Open Sans', sans-serif;
-    // background-color: white;
     background: transparent !important;
     height: 100%;
     overflow: hidden;
   width: 100%;
-    // overflow: hidden;
 }
 
 body {
-    // overflow: hidden;
-    // overflow-x: hidden;
     background: transparent !important;
     min-height: 100vh;
     height: 100%;
     position: fixed;
-    /* prevent overscroll bounce*/
-    // background-color: lightgreen;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    // overscroll-behavior: none;
-    // overflow-y: hidden;
-    // overflow-y: scroll;
-    // -webkit-overflow-scrolling:touch;
 }
 
 .App {
-
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -75,13 +63,11 @@ body {
 
 body, html {
     height: 100%;
-    // overflow-x: hidden;
 }
   
   // background scroll styles
 
 .parallax__video {
-    // margin-top: 13% !important;
     opacity: .8;
 }
 
@@ -104,10 +90,7 @@ body, html {
   .parallax__layer--base {
     @include flexCenter(column);
     transform: translateZ(0);
-    // background-color: #384a61;
     z-index: 10;
-    // margin-top: 6%;
-    
     div {
         // backgound-color: white;
     }
