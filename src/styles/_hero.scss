@@ -71,7 +71,7 @@ div.hero {
         h3 {
             @include flexCenter(column);
             // font-family: 'Monoton', cursive;
-            font-size: 30px;
+            font-size: 22px;
             font-family: 'Reem Kufi', sans-serif;
     }
     @media (max-width: 762px) {

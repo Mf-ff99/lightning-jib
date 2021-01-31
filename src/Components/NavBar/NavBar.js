@@ -164,7 +164,7 @@ const NavStyled = styled.nav`
        /* max-width: 100px; */
     }
     .logo a span {
-        font-size: 30px;
+        font-size: 25px;
         max-width: 100px;
         margin-left: 20px;
         /* font-family: 'Righteous', cursive; */
@@ -176,10 +176,12 @@ const NavStyled = styled.nav`
         @media (min-width: 658px) {
             font-size: 43px;
             margin-left: 5px;
+            
         }
         
         @media (min-width: 500px) {
             width: 20%;
+
             /* max-width: 150px */
         }
     }
