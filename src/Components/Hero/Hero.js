@@ -28,7 +28,7 @@ export default function Hero() {
                         <div className='hero'>
                             <h2>Lightning</h2>
                             <h2>Jib</h2>
-                            <h3>Innovation In Motion</h3>
+                            <h3>Innovation in Motion</h3>
                         </div>
                     </div>
                 </div>

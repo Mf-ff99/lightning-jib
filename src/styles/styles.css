@@ -907,6 +907,24 @@ body, html {
   height: 100%;
 }
 
+.parallax__layer--back:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: -5;
+  opacity: .6;
+  min-height: 700px;
+}
+
+@media (min-width: 868px) {
+  .parallax__layer--back:before {
+    min-height: 500px;
+  }
+}
+
 .parallax__group {
   position: relative;
   height: 100vh;
@@ -936,29 +954,11 @@ body, html {
 }
 
 .parallax__group .blue-bg {
-  margin-top: 10%;
+  margin-top: 8%;
   background-color: transparent;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-}
-
-.parallax__group .blue-bg:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  height: 50vh;
-  background-color: black;
-  z-index: -5;
-  opacity: .6;
-  min-height: 700px;
-}
-
-@media (min-width: 868px) {
-  .parallax__group .blue-bg:before {
-    min-height: 500px;
-  }
 }
 
 .parallax__group .blue-bg p {

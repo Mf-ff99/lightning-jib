@@ -52,7 +52,8 @@ const NavStyled = styled.nav`
     /* background-color: #161825; */
     /* background-color: #566271; */
     /* background-color: #384a61; */
-    background-color: #1f334d;
+    /* background-color: #1f334d; */
+    background-color: #123c60;
     /* background-color: #41628b; */
     color: #FFFFEA !important;
     z-index: 1;
