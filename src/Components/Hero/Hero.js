@@ -12,7 +12,7 @@ export default function Hero() {
                 <div class="parallax__group  group-one">
                     <div class="parallax__layer parallax__layer--back group-one bg-1">
                     <div class="fullscreen-bg">
-                <video src={Background} type="video/mp4" autoPlay loop muted style={{zIndex: '100', height: '100%'}}/>
+                <video src={Background} type="video/mp4" autoPlay loop muted playsinline style={{zIndex: '100', height: '100%'}}/>
                 </div>
                     </div>
                     <div class="parallax__layer parallax__layer--base bg-image">

@@ -47,7 +47,7 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     /* background-color: #02081a; */
     /* background-color: #161825; */
     /* background-color: #566271; */
