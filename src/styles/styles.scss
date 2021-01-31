@@ -80,16 +80,6 @@ body, html {
   
   // background scroll styles
 
-
-//   <div class="wrapper">
-//   <div class="parallax__layer parallax__layer--back fixed-div">
-//     ...
-//   </div>
-//   <div class="parallax__layer parallax__layer--base">
-//     ...
-//   </div>
-// </div>
-
 .parallax__video {
     // margin-top: 13% !important;
 }
@@ -132,16 +122,11 @@ body, html {
     position: relative;
     z-index: -1;
     margin-top: 620px;
-    // max-height: 80vh;
-    // background-image: url(/src/assets/images/lj-closeup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    // max-height: 100vh;
     width: 100%;
     height: 100%;
-
-    // background-color: white;
   }
   .parallax__group {
     position: relative;
@@ -187,7 +172,7 @@ body, html {
         min-height: 700px;
         // min-height: fit-content;
         @media (min-width: 868px) {
-            min-height: 400px;
+            min-height: 500px;
             // height: 500px;
         }
     }
@@ -401,7 +386,8 @@ body, html {
 .contact, .learn-more {
     /* Location of the image */
     background-image: url(/src/assets/images/lj-closeup.jpg);
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 800px;
     // overflow: hidden;
     scroll-behavior: none;
     // z-index: 2;
@@ -436,6 +422,10 @@ body, html {
        * to improve page load speed on mobile internet connections */
     //   background-image: url(images/background-photo-mobile-devices.jpg);
     background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-position: scroll;
+    @media (hover: none) {
+        background-attachment: initial;
+    }
     }
       }
 

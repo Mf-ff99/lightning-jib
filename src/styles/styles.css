@@ -951,7 +951,7 @@ body, html {
 
 @media (min-width: 868px) {
   .parallax__group .blue-bg:before {
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -1190,7 +1190,8 @@ body, html {
 .contact, .learn-more {
   /* Location of the image */
   background-image: url(/src/assets/images/lj-closeup.jpg);
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 800px;
   scroll-behavior: none;
   /* Image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -1215,6 +1216,13 @@ body, html {
     /* The file size of this background image is 93% smaller
        * to improve page load speed on mobile internet connections */
     background-image: url(/src/assets/images/lj-closeup.jpg);
+    background-position: scroll;
+  }
+}
+
+@media only screen and (max-width: 767px) and (hover: none) {
+  .contact, .learn-more {
+    background-attachment: initial;
   }
 }
 /*# sourceMappingURL=styles.css.map */
