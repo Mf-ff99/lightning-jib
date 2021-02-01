@@ -37,7 +37,6 @@ export default function Hero() {
       ` }}> */}
                             {/* </div> */}
 
-                            {/* <video src={Background} type="video/mp4" autoPlay loop muted playsInLine style={{zIndex: '100', height: '100%'}}/> */}
                         </div>
                     </div>
                     <div className="parallax__layer parallax__layer--base bg-image">
