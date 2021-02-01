@@ -76,6 +76,7 @@ body, html {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
     // background-color: #040b22;
     background-color: #384a61;
   }
@@ -149,7 +150,7 @@ body, html {
     }
     .blue-bg {
         // background-color: #040b22;
-        margin-top: 8%;
+        margin-top: 5%;
         // background-color: #384a61;
         background-color: transparent;
         min-height: fit-content;
