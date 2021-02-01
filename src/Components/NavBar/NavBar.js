@@ -85,8 +85,8 @@ const NavStyled = styled.nav`
     }
     .logo {
         margin: 0;
-        max-width: 200px;
-        padding-left: 20px;
+        /* max-width: 200px; */
+        padding-left: 8px;
         @media (min-width: 450px) {
             max-width: 500px;
             padding-left: 0;
@@ -99,8 +99,8 @@ const NavStyled = styled.nav`
     }
     .logo a span {
         font-size: 18px;
-        max-width: 100px;
-        margin-left: 20px;
+        /* max-width: 100px; */
+        margin-left: 1px;
         /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         /* font-family: 'Black Ops One', cursive; */
