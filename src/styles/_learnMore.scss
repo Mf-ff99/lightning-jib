@@ -16,6 +16,7 @@
         @include flexCenter(column);
         min-height: 800px;
         width: 100%;
+       
         @media (min-width: 658px) {
             @include flexCenter(row);
             min-height: 500px;
@@ -25,7 +26,7 @@
             max-width: 100%;
             @media (min-width: 400px) {
                 max-width: 380px;
-                margin: 20px;
+                margin-right: 15px;
             }
         }
         .page-div-text-container {
