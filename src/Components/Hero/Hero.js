@@ -1,28 +1,44 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import images from '../../assets/images/BarreledImages'
 import ReactPlayer from 'react-player/lazy'
-import Background from '../../assets/videos/lightning-background.mp4'
+// import Background from '/videos/lightning-background.mp4'
+
 
 export default function Hero() {
-
+    // create a ref for the background video
+    const videoRef = useRef();
+    // set the videoRef current playback rate to .03 * current playback rate.
+    // assign ref to ReactPlayer
+    const setPlayBack = () => {
+        videoRef.current.playbackRate = 0.3;
+    };
 
     return (
         <>
             <div className="parallax">
                 <div className="parallax__group  group-one">
                     <div className="parallax__layer parallax__layer--back group-one bg-1">
-                    <div className="fullscreen-bg">
-                    <div dangerouslySetInnerHTML={{ __html: `
-        <video
-          loop
-          muted
-          autoplay
-          playsinline
-          src="${Background}"
-        />,
-      ` }}></div>
-                {/* <video src={Background} type="video/mp4" autoPlay loop muted playsInLine style={{zIndex: '100', height: '100%'}}/> */}
-                </div>
+                        <div className="fullscreen-bg">
+                            {/* <div dangerouslySetInnerHTML={{ __html: ` */}
+                            <ReactPlayer
+                                url='/videos/lightning-background.mp4'
+                                ref={videoRef}
+                                loop={true}
+                                volume={0}
+                                muted={true}
+                                // autoPlay={true}
+                                playing={true}
+                                // onCanPlay={() => setPlayBack()}
+                                playsInLine={true}
+                                playbackRate={.7}
+                                className='bg-video'
+                            />
+                            {/* ,
+      ` }}> */}
+                            {/* </div> */}
+
+                            {/* <video src={Background} type="video/mp4" autoPlay loop muted playsInLine style={{zIndex: '100', height: '100%'}}/> */}
+                        </div>
                     </div>
                     <div className="parallax__layer parallax__layer--base bg-image">
                         <div className='hero'>
@@ -86,8 +102,8 @@ export default function Hero() {
                             <p className='image-p'>Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving cinematic crane shots has never been easier. The Lightning Jib's compact build is location-friendly and ideal remote-locations, large-scale operations, concerts, churches, and sporting events.</p>
                         </div>
                     </div>
-    
-  </div>
+
+                </div>
                 <div className="parallax__group">
                     <div className="parallax__layer parallax__layer--back bg-blue"></div>
                     <div className="parallax__layer parallax__layer--base info-container">

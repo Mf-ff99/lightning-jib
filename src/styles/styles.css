@@ -113,7 +113,8 @@ div.hero-info-div {
      object-fit: fill;
   min-height: 600px;
   min-width: 320px;
-  opacity: .68;
+  opacity: .38;
+  background-color: #333;
 }
 
 .fullscreen-bg video {
@@ -124,6 +125,7 @@ div.hero-info-div {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: .8;
   min-height: 600px;
   min-width: 320px;
 }
@@ -549,26 +551,9 @@ footer h2:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: whitesmoke;
+  color: black;
   height: 100%;
   min-height: 800px;
-}
-
-.contact .page-wrapper:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: -1;
-  opacity: .5;
-  border-radius: 4px;
-}
-
-@media (min-width: 868px) {
-  .contact .page-wrapper:before {
-    height: 100%;
-  }
 }
 
 .contact p {
@@ -596,6 +581,92 @@ footer h2:nth-child(2) {
   }
   .contact p {
     font-size: 30px;
+  }
+}
+
+.page-view-wrapper {
+  margin-top: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #c5cdd9;
+}
+
+.page-view-wrapper .light-div {
+  background-color: #c5cdd9;
+}
+
+.page-view-wrapper .dark-div {
+  background-color: whitesmoke;
+}
+
+.page-view-wrapper .page-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 800px;
+  width: 100%;
+}
+
+@media (min-width: 658px) {
+  .page-view-wrapper .page-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 500px;
+  }
+}
+
+.page-view-wrapper .page-div img {
+  max-width: 280px;
+}
+
+.page-view-wrapper .page-div .page-div-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+}
+
+@media (min-width: 658px) {
+  .page-view-wrapper {
+    margin-top: 500px;
   }
 }
 
@@ -634,40 +705,20 @@ footer h2:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: whitesmoke;
+  color: #333;
   height: 100%;
-  min-height: 800px;
-}
-
-.learn-more .page-wrapper:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: -1;
-  opacity: .5;
-  border-radius: 4px;
-}
-
-@media (min-width: 868px) {
-  .learn-more .page-wrapper:before {
-    height: 100%;
-  }
-}
-
-.learn-more .page-wrapper p {
-  max-width: 280px;
-}
-
-@media (min-width: 658px) {
-  .learn-more .page-wrapper p {
-    max-width: 450px;
-  }
 }
 
 .learn-more p {
-  font-size: 25px;
+  max-width: 380px;
+  font-size: 28px;
+}
+
+@media (min-width: 658px) {
+  .learn-more p {
+    max-width: 750px;
+    font-size: 38px;
+  }
 }
 
 .learn-more h2 {
@@ -676,6 +727,7 @@ footer h2:nth-child(2) {
           margin-block-start: 0;
   -webkit-margin-after: 0;
           margin-block-end: 0;
+  max-width: 750px;
 }
 
 .learn-more span {
@@ -949,7 +1001,7 @@ body, html {
 }
 
 .contact, .learn-more {
-  background-image: url(/src/assets/images/lj-closeup.jpg);
+  background-color: #B6C1CF;
   height: 100vh;
   min-height: 800px;
   scroll-behavior: none;
@@ -964,7 +1016,6 @@ body, html {
 /* For mobile devices */
 @media only screen and (max-width: 767px) {
   .contact, .learn-more {
-    background-image: url(/src/assets/images/lj-closeup.jpg);
     background-position: scroll;
   }
 }

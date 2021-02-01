@@ -22,7 +22,8 @@ div.hero-info-div {
     object-fit: fill;
     min-height: 600px;
     min-width: 320px;
-    opacity: .68;
+    opacity: .38;
+    background-color: #333;
     video {
         position: absolute;
         object-fit: cover;
@@ -30,6 +31,7 @@ div.hero-info-div {
         left: 0;
         width: 100%;
         height: 100%;
+        opacity: .8;
         min-height: 600px;
         min-width: 320px;
         @media (min-width: 658px) {

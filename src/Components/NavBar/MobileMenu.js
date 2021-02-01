@@ -91,7 +91,7 @@ const UL = styled.ul`
 
     .home-nav-link {
         @media (min-width: 658px) {
-            display: none;
+            /* display: none; */
         }
     }
     
@@ -155,7 +155,7 @@ class MobileNav extends React.Component {
                 <a href='/tools'>NavItem</a>
             </li> */}
             <li className="right-side-nav home-nav-link">
-                <Link onClick={this.reloadRoute()} to={'/'}>Home</Link>
+            <a href='/'>Home</a>
             </li>
             {/* <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
