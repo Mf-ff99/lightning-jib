@@ -98,17 +98,18 @@ const NavStyled = styled.nav`
        /* max-width: 100px; */
     }
     .logo a span {
-        font-size: 18px;
+        font-size: 26px;
         /* max-width: 100px; */
         margin-left: 1px;
         /* font-family: 'Righteous', cursive; */
         /* font-family: 'Monoton', cursive; */
         /* font-family: 'Black Ops One', cursive; */
         /* font-family: 'Faster One', cursive; */
-        font-family: 'Major Mono Display', monospace;
+        /* font-family: 'Major Mono Display', monospace; */
+        font-family: 'Gruppo', cursive; 
         letter-spacing: 4px;
         @media (min-width: 658px) {
-            font-size: 33px;
+            font-size: 46px;
             padding-left: 20px;
             margin-left: 5px;
             
