@@ -32,7 +32,7 @@ const LearnMore = () => {
                 </div>
                 <div className='page-div dark-div'>
                     <div className='page-div-text-container'>
-                <h2 className='page-div-header'>The Lightning Jib</h2>
+                <h2 className='page-div-header'>THE LIGHTNING JIB</h2>
                 <p></p>
                 <ul>
                     <li>Overall weight: </li>
@@ -44,11 +44,10 @@ const LearnMore = () => {
                     </div>
                     <img src={images.OutdoorLJ} alt='Lightning Jib' />
                 </div>
-                {/* <video src={Background} type="video/mp4" autoPlay loop muted/> */}
                 <div className='page-div light-div'>
                     <div className='page-div-text-container'>
-                    {/* <img src={images.OutdoorLJ} alt='Lightning Jib' /> */}
-                <h2 className='page-div-header'>The Lightning Jib Packages</h2>
+                    <img src={images.OutdoorLJ} alt='Lightning Jib' />
+                <h2 className='page-div-header'>LIGHTNING JIB PACKAGES</h2>
                 <p></p>
                 <ul>
                     <li>Price: </li>

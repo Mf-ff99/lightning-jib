@@ -104,7 +104,7 @@ export default function Hero() {
 
                 </div>
                 <div className="parallax__group">
-                    <div className="parallax__layer parallax__layer--back bg-blue"></div>
+                    <div className="parallax__layer parallax__layer--back bg-blue bg-5"></div>
                     <div className="parallax__layer parallax__layer--base info-container">
                         <div>
                             <h1>Gimbal Quick-Release Technology</h1>
