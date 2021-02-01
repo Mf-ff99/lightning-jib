@@ -65,7 +65,8 @@ const UL = styled.ul`
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
-        background-color: #1f334d;
+        /* background-color: #1f334d; */
+        background-color: rgb(20,24,30);
         position: fixed;
         transform: ${({open}) => open ? 'translateY(0)' : 'translateY(-100%)'};
         top: 0;

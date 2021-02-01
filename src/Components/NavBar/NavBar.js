@@ -52,11 +52,12 @@ const NavStyled = styled.nav`
     /* background-color: #566271; */
     /* background-color: #384a61; */
     /* background-color: #1f334d; */
-    background-color: #123c60;
+    /* background-color: hsl(250, 19%, 11%); */
+    background-color: rgb(20,24,30);
     /* background-color: #41628b; */
     color: #FFFFEA !important;
     z-index: 1;
-    opacity: .95;
+    /* opacity: .95; */
     overflow-x: hidden;
     .logo {
         padding: 15px 0;
