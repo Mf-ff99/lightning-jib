@@ -650,7 +650,15 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper .page-div img {
-  max-width: 280px;
+  -webkit-box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.2);
+          box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+@media (min-width: 400px) {
+  .page-view-wrapper .page-div img {
+    max-width: 380px;
+  }
 }
 
 .page-view-wrapper .page-div .page-div-text-container {
