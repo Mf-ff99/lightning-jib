@@ -45,8 +45,8 @@ const LearnMore = () => {
                     <img src={images.OutdoorLJ} alt='Lightning Jib' />
                 </div>
                 <div className='page-div light-div'>
-                    <div className='page-div-text-container'>
                     <img src={images.OutdoorLJ} alt='Lightning Jib' />
+                    <div className='page-div-text-container'>
                 <h2 className='page-div-header'>LIGHTNING JIB PACKAGES</h2>
                 <p></p>
                 <ul>
