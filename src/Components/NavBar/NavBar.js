@@ -45,6 +45,7 @@ const NavStyled = styled.nav`
     align-items: center;
     flex-direction: row;
     list-style: none;
+    overflow: hidden;
     /* padding-bottom: 10px; */
     /* background-color: #02081a; */
     /* background-color: #161825; */

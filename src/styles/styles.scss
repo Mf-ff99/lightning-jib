@@ -99,7 +99,7 @@ body, html {
     // background-color: #040b22;
     background-color: #384a61;
         transform: translateZ(-1px);
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2.01);
     position: relative;
     z-index: -1;
     margin-top: 620px;
@@ -202,11 +202,11 @@ body, html {
   /* fifth section */
   
   .bg-3 {
-    background-image: url(/src/assets/images/lj-closeup.jpg);
+      background-image: url(/src/assets/images/lightning-background.jpg)
 }
 
-  .bg-4 {
-      background-image: url(/src/assets/images/lightning-background.jpg)
+.bg-4 {
+      background-image: url(/src/assets/images/lj-closeup.jpg);
   }
 
 .text-overlay {
