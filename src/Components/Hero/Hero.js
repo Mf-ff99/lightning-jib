@@ -29,7 +29,7 @@ export default function Hero() {
                                 // autoPlay={true}
                                 playing={true}
                                 // onCanPlay={() => setPlayBack()}
-                                playsInLine={true}
+                                playsinline={true}
                                 playbackRate={.7}
                                 className='bg-video'
                             />
