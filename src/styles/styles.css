@@ -666,7 +666,7 @@ footer h2:nth-child(2) {
   max-width: 100%;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 520px) {
   .page-view-wrapper .page-div img {
     max-width: 380px;
     margin-right: 15px;

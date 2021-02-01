@@ -16,7 +16,7 @@ const LearnMore = () => {
                 <img src={images.LJSkew} alt='Lightning Jib' />
                 </div>
                 <div className='page-div dark-div'>
-                <img src={images.LJInStudio} alt='Lightning Jib' />
+                <img src={images.LJPacked} alt='Lightning Jib' />
                     <div className='page-div-text-container'>
 
                 <h2 className='page-div-header'>GET YOUR CRANE ANYWHERE YOU NEED</h2>

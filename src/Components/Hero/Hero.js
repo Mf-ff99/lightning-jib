@@ -61,7 +61,7 @@ export default function Hero() {
                             />
                         </div>
                         <div>
-                            <h1>Introducing The Lightning Jib</h1>
+                            <h1>INTRODUCING THE LIGHTNING JIB</h1>
                             <p className='image-p'>
                                 The Lightning Jib is a new, innovative tool joining the arsenal of film and television production equipment. With its time-efficient build and strike feature, the Lightning Jib is always ready for the next jib or handheld gimbal shot.
                         </p>
@@ -97,7 +97,7 @@ export default function Hero() {
                             <img src={images.LJBlackWhite} alt='Lightning Jib Outdoors' />
                         </div>
                         <div>
-                            <h1>Built by Directors, For Directors</h1>
+                            <h1>BUILT BY DIRECTORS, FOR DIRECTORS</h1>
                             <p className='image-p'>Extending to 18' feet in length and boasting a 15 minute setup/strike-time, achieving cinematic crane shots has never been easier. The Lightning Jib's compact build is location-friendly and ideal remote-locations, large-scale operations, concerts, churches, and sporting events.</p>
                         </div>
                     </div>
@@ -107,13 +107,13 @@ export default function Hero() {
                     <div className="parallax__layer parallax__layer--back bg-blue bg-5"></div>
                     <div className="parallax__layer parallax__layer--base info-container">
                         <div>
-                            <h1>Gimbal Quick-Release Technology</h1>
+                            <h1>GIMBAL QUICK-RELEASE TECHNOLOGY</h1>
                             <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>
                             <p>experience freedom of creativity with our one-of-a-kind gimbal-release system. Get the shots you've dreamed of.</p>
                         </div>
 
                         <div>
-                            <h1>Lightning Fast Transport With Ease</h1>
+                            <h1>LIGHTNING FAST EVERYTHING</h1>
                             <p>flying your favorite camera package has never been easier. The Lightning Jib can be transported and operated by one person with a 'insert dimensions here' case</p>
                         </div>
 
