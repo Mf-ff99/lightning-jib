@@ -590,7 +590,7 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper {
-  margin-top: 2300px;
+  margin-top: 3100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,7 +680,7 @@ footer h2:nth-child(2) {
 
 @media (min-width: 658px) {
   .page-view-wrapper {
-    margin-top: 1100px;
+    margin-top: 1500px;
   }
 }
 

@@ -45,6 +45,16 @@ const LearnMore = () => {
                     <img src={images.OutdoorLJ} alt='Lightning Jib' />
                 </div>
                 {/* <video src={Background} type="video/mp4" autoPlay loop muted/> */}
+                <div className='page-div light-div'>
+                    <div className='page-div-text-container'>
+                    {/* <img src={images.OutdoorLJ} alt='Lightning Jib' /> */}
+                <h2 className='page-div-header'>The Lightning Jib Packages</h2>
+                <p></p>
+                <ul>
+                    <li>Price: </li>
+                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     )
