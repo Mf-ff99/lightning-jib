@@ -4,12 +4,17 @@
     height: 100%;
     min-height: 800px;
     @include flexCenter(column);
+    align-items: flex-start;
     .page-wrapper {
         @include flexCenter(column);
         color: black;
         // padding-top: 100px;
-        height: 100%;
-       min-height: 800px;
+        // height: 500px;
+    //    min-height: 800px;
+    min-height: 600px;
+    width: 100vw;
+    left: 0;
+       background-color: whitesmoke;
         // &:before {
         //     // margin-top: 250px;
         //     content: "";

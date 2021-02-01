@@ -3,6 +3,7 @@
 .about-our-team {
     min-height: 800px;
     @include flexCenter(column);
+    align-items: flex-start;
     p {
         font-size: 18px;
         max-width: 280px;

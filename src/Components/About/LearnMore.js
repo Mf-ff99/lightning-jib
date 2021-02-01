@@ -30,6 +30,20 @@ const LearnMore = () => {
                     </div>
                     <img src={images.LJHero} alt='Lightning Jib' />
                 </div>
+                <div className='page-div dark-div'>
+                    <div className='page-div-text-container'>
+                <h2 className='page-div-header'>The Lightning Jib</h2>
+                <p></p>
+                <ul>
+                    <li>Overall weight: </li>
+                    <li>Length: </li>
+                    <li>Lens reach: </li>
+                    <li>Gimbal: Ronin S2</li>
+                    <li></li>
+                </ul>
+                    </div>
+                    <img src={images.OutdoorLJ} alt='Lightning Jib' />
+                </div>
                 {/* <video src={Background} type="video/mp4" autoPlay loop muted/> */}
             </div>
         </div>
