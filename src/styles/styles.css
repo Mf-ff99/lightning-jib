@@ -719,7 +719,7 @@ footer h2:nth-child(2) {
   padding: 25px;
 }
 
-@media screen and (max-height: 842px) {
+@media screen and (max-height: 452px) {
   .page-view-wrapper {
     margin-top: 1590px !important;
   }
