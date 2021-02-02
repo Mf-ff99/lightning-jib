@@ -47,10 +47,10 @@
      height: 100%;
      background-color: #c5cdd9;
      .light-div {
-         background-color: #c5cdd9;
+         background-color: #eaebed;
      }
      .dark-div {
-         background-color: whitesmoke;
+         background-color: #f4f5f7;
      }
     .page-div {
         @include flexCenter(column);

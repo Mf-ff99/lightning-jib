@@ -564,7 +564,7 @@ footer h2:nth-child(2) {
   min-height: 607px;
   width: 100vw;
   left: 0;
-  background-color: whitesmoke;
+  background-color: #eeeff1;
 }
 
 .contact p {
@@ -649,11 +649,11 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper .light-div {
-  background-color: #c5cdd9;
+  background-color: #eaebed;
 }
 
 .page-view-wrapper .dark-div {
-  background-color: whitesmoke;
+  background-color: #f4f5f7;
 }
 
 .page-view-wrapper .page-div {
