@@ -208,14 +208,14 @@ div.hero h3 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding-right: 50px;
+    padding-right: 70px;
     margin-top: 100px;
   }
 }
 
 @media (min-width: 762px) {
   div.hero {
-    margin-top: 125px;
+    margin-top: 45px;
     float: right;
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
@@ -623,7 +623,7 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper {
-  margin-top: 3100px;
+  margin-top: 3000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
