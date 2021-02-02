@@ -61,7 +61,7 @@ const Burger = () => {
                     <div></div>
                 </>
             </StyledBurger>
-            <MobileNav open={open} />
+            <MobileNav open={open} setOpen={setOpen} />
         </>
     )
 }

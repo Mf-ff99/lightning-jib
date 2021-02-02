@@ -118,7 +118,7 @@ const UL = styled.ul`
     };
 
 class MobileNav extends React.Component {
-  ponentDidMount() {
+  componentDidMount() {
         // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
         // Specifically, the target element is the one we would like to allow scroll on (NOT a parent of that element).
         // This is also the element to apply the CSS '-webkit-overflow-scrolling: touch;' if desired.
@@ -137,39 +137,33 @@ class MobileNav extends React.Component {
     // console.log('history pushed', history)
     if(history.location.pathname === '/') {
         window.scrollTo({top: 0, behavior: 'smooth'})
-        history.push('/emtpy')
+        history.push('/empty')
         history.push('/')
     }
   }
 
     render() {
         let open = this.props.open
+        let setOpen = this.props.setOpen
         if(open) disableBodyScroll(this.targetElement)
         if(!open) clearAllBodyScrollLocks()
         return (
             <UL id='mobile-nav' open={open}>
-            {/* <li className="right-side-nav">
-                <a href="/showreel">NavItem</a>
-
-            </li>
-            <li className="right-side-nav">
-                <a href='/tools'>NavItem</a>
-            </li> */}
             <li className="right-side-nav home-nav-link">
-            <a href='/'>Home</a>
+            <a href='/' onClick={() => setOpen(!open)}>Home</a>
             </li>
             {/* <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
             </li> */}
             <li className="right-side-nav">
-                <Link to='/learn-more'>Pricing and Details</Link>
+                <Link to='/learn-more' onClick={() => setOpen(!open)}>Pricing and Details</Link>
             </li>
             <li className="right-side-nav">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact" onClick={() => setOpen(!open)}>Contact Us</Link>
 
             </li>
             <li className="right-side-nav">
-                <Link to="/about-our-team">About Our Team</Link>
+                <Link to="/about-our-team" onClick={() => setOpen(!open)}>About Our Team</Link>
 
             </li>
         </UL>
