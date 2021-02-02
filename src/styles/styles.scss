@@ -117,10 +117,11 @@ body, html {
             height: 100vh;
             background-color: black;
             z-index: -5;
-            opacity: .6;
+            opacity: .45;
             min-height: 700px;
             @media (min-width: 868px) {
                 min-height: 500px;
+                opacity: .65;
             }
         }
 

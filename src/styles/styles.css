@@ -595,6 +595,32 @@ footer h2:nth-child(2) {
   }
 }
 
+.img-page-header {
+  background-image: url(/src/assets/images/lightning-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  width: 100vw;
+  height: 50%;
+  z-index: -1;
+  padding-top: 130px;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-page-header h2 {
+  color: whitesmoke;
+}
+
+@media (min-width: 658px) {
+  .img-page-header h2 {
+    padding-left: 200px;
+  }
+}
+
 .page-view-wrapper {
   margin-top: 3100px;
   display: -webkit-box;
@@ -707,36 +733,6 @@ footer h2:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.learn-more .page-header {
-  background-image: url(/src/assets/images/lightning-background.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: initial;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-left: 20px;
-}
-
-.learn-more .page-header h2 {
-  margin-top: 120px;
-  color: whitesmoke;
-}
-
-@media (min-width: 658px) {
-  .learn-more .page-header {
-    padding-left: 35px;
-    background-attachment: fixed;
-  }
-  .learn-more .page-header h2 {
-    margin-top: 140px;
-    padding-left: 200px;
-  }
 }
 
 .learn-more p {
@@ -950,13 +946,14 @@ body, html {
   height: 100vh;
   background-color: black;
   z-index: -5;
-  opacity: .6;
+  opacity: .45;
   min-height: 700px;
 }
 
 @media (min-width: 868px) {
   .parallax__layer--back:before {
     min-height: 500px;
+    opacity: .65;
   }
 }
 

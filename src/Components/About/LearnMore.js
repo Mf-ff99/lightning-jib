@@ -6,7 +6,7 @@ const LearnMore = () => {
 
     return (
         <div className='learn-more'>
-            <div className='page-header learn-more-page-header'>
+            <div className='img-page-header learn-more-page-header'>
                 <h2>DETAILS</h2>
             </div>
             <div className='page-view-wrapper'>
