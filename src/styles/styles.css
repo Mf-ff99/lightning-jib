@@ -602,9 +602,9 @@ footer h2:nth-child(2) {
   background-attachment: initial;
   background-size: cover;
   width: 100vw;
-  height: 150px;
+  height: 200px;
   z-index: -1;
-  padding-top: 100px;
+  padding-top: 80px;
   overflow-x: hidden;
   position: absolute;
   top: 0;
@@ -614,7 +614,9 @@ footer h2:nth-child(2) {
 }
 
 .img-page-header h2 {
-  padding-left: 30px;
+  text-align: center;
+  height: 150px;
+  position: relative;
   color: #ffffea;
   font-size: 30px !important;
   margin-top: 20px !important;
@@ -625,11 +627,12 @@ footer h2:nth-child(2) {
     margin-top: 30px !important;
     font-size: 55px !important;
     padding-left: 200px;
+    text-align: left;
   }
 }
 
 .page-view-wrapper {
-  margin-top: 3000px;
+  margin-top: 2900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,9 +722,9 @@ footer h2:nth-child(2) {
   padding: 25px;
 }
 
-@media screen and (max-height: 452px) {
+@media screen and (max-height: 763px) {
   .page-view-wrapper {
-    margin-top: 1590px !important;
+    margin-top: 3090px;
   }
 }
 
@@ -1081,7 +1084,7 @@ body, html {
 }
 
 .contact, .learn-more {
-  background-color: #B6C1CF;
+  background-color: #384a61;
   height: 100vh;
   min-height: 800px;
   scroll-behavior: none;

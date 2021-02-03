@@ -7,9 +7,9 @@
     background-attachment: initial;
     background-size: cover;
     width: 100vw;
-    height: 150px;
+    height: 200px;
     z-index: -1;
-    padding-top: 100px;
+    padding-top: 80px;
     overflow-x: hidden;
     // margin-top: 125px;
     // @include flexCenter(column);
@@ -22,7 +22,10 @@
     h2 {
         // margin-top: 120px;
         // top: 0;
-        padding-left: 30px;
+        // padding-left: 30px;
+        text-align: center;
+        height: 150px;
+        position: relative;
         color: #ffffea;
         font-size: 30px !important;
         margin-top: 20px !important;
@@ -35,12 +38,13 @@
             margin-top: 30px !important;
             font-size: 55px !important;
             padding-left: 200px;
+            text-align: left;
         }
     }
 }
 
 .page-view-wrapper {
-    margin-top: 3000px;
+    margin-top: 2900px;
     // overflow-x: hidden;
     @include flexCenter(column);
      width: 100%;
@@ -77,8 +81,8 @@
             padding: 25px;
         }
     }
-    @media screen and (max-height: 452px) {
-        margin-top: 1590px !important;
+    @media screen and (max-height: 763px) {
+        margin-top: 3090px;
     }
     @media (min-width: 658px) {
         margin-top: 1490px;
