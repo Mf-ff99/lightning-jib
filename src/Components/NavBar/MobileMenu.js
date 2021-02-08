@@ -150,20 +150,20 @@ class MobileNav extends React.Component {
         return (
             <UL id='mobile-nav' open={open}>
             <li className="right-side-nav home-nav-link">
-            <a href='/' onClick={() => setOpen(!open)}>Home</a>
+            <a href='/' onClick={() => setOpen(false)}>Home</a>
             </li>
             {/* <li className="right-side-nav">
                 <Link to='/learn-more'>Learn More</Link>
             </li> */}
             <li className="right-side-nav">
-                <Link to='/learn-more' onClick={() => setOpen(!open)}>Pricing and Details</Link>
+                <Link to='/learn-more' onClick={() => setOpen(false)}>Pricing and Details</Link>
             </li>
             <li className="right-side-nav">
-                <Link to="/contact" onClick={() => setOpen(!open)}>Contact Us</Link>
+                <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
 
             </li>
             <li className="right-side-nav">
-                <Link to="/about-our-team" onClick={() => setOpen(!open)}>About Our Team</Link>
+                <Link to="/about-our-team" onClick={() => setOpen(false)}>About Our Team</Link>
 
             </li>
         </UL>

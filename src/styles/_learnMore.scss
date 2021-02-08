@@ -4,7 +4,7 @@
     background-image: url(/src/assets/images/lightning-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    // background-attachment: initial;
+    background-attachment: absolute;
     background-size: cover;
     width: 100vw;
     height: 100px;
@@ -47,7 +47,7 @@
     }
     
     .page-view-wrapper {
-        margin-top: 3150px;
+        margin-top: 3240px;
         // overflow-x: hidden;
         @include flexCenter(column);
         width: 100%;
@@ -91,7 +91,7 @@
         // margin-top: 3190px;
     }
     @media (min-height: 796px) and (min-width: 658px){
-        margin-top: 1650px;
+        margin-top: 1750px;
     }
 }
 
