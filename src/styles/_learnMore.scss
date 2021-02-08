@@ -4,7 +4,6 @@
     background-image: url(/src/assets/images/lightning-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: absolute;
     background-size: cover;
     width: 100vw;
     height: 100px;
@@ -22,6 +21,14 @@
     opacity: .98;
     background-color: black;
     // padding-left: 20px;
+    @media only screen and (max-width: 767px) {
+       
+        // background-image: url(/src/assets/images/lj-closeup.jpg);
+        background-position: scroll;
+        @media (hover: none) {
+            background-attachment: initial;
+        }
+          }
     h2 {
         // margin-top: 120px;
         // top: 0;
@@ -47,7 +54,7 @@
     }
     
     .page-view-wrapper {
-        margin-top: 3240px;
+        margin-top: 50px;
         // overflow-x: hidden;
         @include flexCenter(column);
         width: 100%;
@@ -85,21 +92,22 @@
         }
     }
     @media (max-height: 796px) and (min-width: 691px) {
-        margin-top: 1650px;
+        // margin-top: 1650px;
     }
     @media (max-height: 763px) {
         // margin-top: 3190px;
     }
     @media (min-height: 796px) and (min-width: 658px){
-        margin-top: 1750px;
+        // margin-top: 1750px;
     }
+    
     
 }
 
 .learn-more {
     margin-top: 50px;
     @include flexCenter(column);
-   
+   height: fit-content !important;
     p {
         max-width: 400px;
         font-size: 18px !important;

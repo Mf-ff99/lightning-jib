@@ -602,7 +602,6 @@ footer h2:nth-child(2) {
   background-image: url(/src/assets/images/lightning-background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: absolute;
   background-size: cover;
   width: 100vw;
   height: 100px;
@@ -625,6 +624,18 @@ footer h2:nth-child(2) {
   background-color: black;
 }
 
+@media only screen and (max-width: 767px) {
+  .img-page-header {
+    background-position: scroll;
+  }
+}
+
+@media only screen and (max-width: 767px) and (hover: none) {
+  .img-page-header {
+    background-attachment: initial;
+  }
+}
+
 .img-page-header h2 {
   padding-left: 50px;
   position: relative;
@@ -640,7 +651,7 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper {
-  margin-top: 3240px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,18 +743,6 @@ footer h2:nth-child(2) {
   padding: 25px;
 }
 
-@media (max-height: 796px) and (min-width: 691px) {
-  .page-view-wrapper {
-    margin-top: 1650px;
-  }
-}
-
-@media (min-height: 796px) and (min-width: 658px) {
-  .page-view-wrapper {
-    margin-top: 1750px;
-  }
-}
-
 .learn-more {
   margin-top: 50px;
   display: -webkit-box;
@@ -759,6 +758,9 @@ footer h2:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 .learn-more p {
