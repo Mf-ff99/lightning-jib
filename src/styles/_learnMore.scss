@@ -47,7 +47,7 @@
     }
     
     .page-view-wrapper {
-        margin-top: 2900px;
+        margin-top: 3150px;
         // overflow-x: hidden;
         @include flexCenter(column);
         width: 100%;
@@ -91,12 +91,12 @@
         // margin-top: 3190px;
     }
     @media (min-height: 796px) and (min-width: 658px){
-        margin-top: 1590px;
+        margin-top: 1650px;
     }
 }
 
 .learn-more {
-    margin-top: 80px;
+    margin-top: 50px;
     @include flexCenter(column);
    
     p {

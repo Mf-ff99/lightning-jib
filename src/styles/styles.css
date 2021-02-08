@@ -561,7 +561,7 @@ footer h2:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   color: black;
-  min-height: 750px;
+  min-height: 680px;
   width: 100vw;
   left: 0;
   background-color: #eeeff1;
@@ -584,6 +584,9 @@ footer h2:nth-child(2) {
 }
 
 @media (min-width: 658px) {
+  .contact {
+    min-height: 750px;
+  }
   .contact h2 {
     font-size: 35px;
   }
@@ -636,7 +639,7 @@ footer h2:nth-child(2) {
 }
 
 .page-view-wrapper {
-  margin-top: 2900px;
+  margin-top: 3150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,12 +739,12 @@ footer h2:nth-child(2) {
 
 @media (min-height: 796px) and (min-width: 658px) {
   .page-view-wrapper {
-    margin-top: 1590px;
+    margin-top: 1650px;
   }
 }
 
 .learn-more {
-  margin-top: 80px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1090,7 +1093,7 @@ body, html {
 }
 
 .contact, .learn-more {
-  background-color: #384a61;
+  background-color: #f1f2f4;
   height: 100vh;
   min-height: 800px;
   background-position: center center;
