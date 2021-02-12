@@ -561,7 +561,7 @@ footer h2:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   color: black;
-  min-height: 650px;
+  min-height: 610px;
   width: 100vw;
   left: 0;
   background-color: #eeeff1;
