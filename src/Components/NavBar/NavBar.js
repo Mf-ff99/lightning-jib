@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Burger from './Burger'
-import images from '../../assets/images/BarreledImages'
+// import images from '../../assets/images/BarreledImages'
 
 const StyledLogo = styled.div`
 

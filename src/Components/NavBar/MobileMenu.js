@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { Link, Router } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { v4 as uuidv4 } from 'uuid';
 import history from './history'
 
@@ -163,7 +163,7 @@ class MobileNav extends React.Component {
 
             </li>
             <li className="right-side-nav">
-                <Link to="/about-our-team" onClick={() => setOpen(false)}>About Our Team</Link>
+                <Link to="/about" onClick={() => setOpen(false)}>About Our Team</Link>
 
             </li>
         </UL>
