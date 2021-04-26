@@ -21,7 +21,7 @@ header {
 
 main {
     background: transparent !important;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 .root {
@@ -40,7 +40,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     background: transparent !important;
     height: 100%;
-    overflow: hidden;
+    // overflow: hidden;
   width: 100%;
 }
 
@@ -48,9 +48,9 @@ body {
     background: transparent !important;
     min-height: 100vh;
     height: 100%;
-    position: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    // position: fixed;
+    // overflow-y: scroll;
+    // -webkit-overflow-scrolling: touch;
     margin: 0;
 }
 
@@ -58,8 +58,8 @@ body {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    // overflow-y: scroll;
+    // -webkit-overflow-scrolling: touch;
 }
 
 body, html {
