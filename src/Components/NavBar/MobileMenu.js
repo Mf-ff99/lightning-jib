@@ -18,12 +18,13 @@ const UL = styled.ul`
     padding-left: 0;
     z-index: 100;
     overflow: hidden;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'Righteous', cursive; */
     /* font-family: 'Fugaz One', cursive; */
 /* font-family: 'K2D', sans-serif; */
  /* font-family: 'Major Mono Display', monospace; */
-    font-weight: 600;
+ font-family: 'Libre Franklin', sans-serif;
+    /* font-weight: 600; */
     max-width: 700px;
     /* background-color: black; */
     img {

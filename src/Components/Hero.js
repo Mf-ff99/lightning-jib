@@ -96,7 +96,7 @@ export default function Hero() {
                     <div className="parallax__layer parallax__layer--back bg-4"></div>
                     <div className="parallax__layer parallax__layer--base blue-bg info-container">
                         <div className='image-container'>
-                            <img src={images.LJBlackWhite} alt='Lightning Jib Outdoors' />
+                            <img src={images.LJHeadCloseup} alt='Lightning Jib Outdoors' />
                         </div>
                         <div>
                             <h1>BUILT BY DIRECTORS, FOR DIRECTORS</h1>
@@ -108,6 +108,9 @@ export default function Hero() {
                 <div className="parallax__group">
                     <div className="parallax__layer parallax__layer--back bg-blue bg-5"></div>
                     <div className="parallax__layer parallax__layer--base info-container">
+                        <div>
+                            <img src={images.LJHandleCloseup} alt='The Lightning Jib Controller' />
+                        </div>
                         <div>
                             <h1>GIMBAL QUICK-RELEASE TECHNOLOGY</h1>
                             <p>achieving cinematic, seamless jib to handheld shots has never been easier</p>

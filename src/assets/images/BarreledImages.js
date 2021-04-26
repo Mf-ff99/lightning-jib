@@ -7,6 +7,9 @@ import LightningBG from './lightning-background.jpg'
 import LJSkew from './lj-skew.jpg'
 import LJPacked from './lightning-jib-packed.jpg'
 import LightningBoltGraphic from './lightning-bolt.png'
+import LJHeadCloseup from './lj-head-closeup.jpg'
+import LJHandleCloseup from './lj-handle-closeup.jpg'
+
 
 const images = {
     LJCloseup,
@@ -18,6 +21,8 @@ const images = {
     LightningBG,
     LightningBoltGraphic,
     LJPacked,
+    LJHeadCloseup,
+    LJHandleCloseup,
 }
 
 export default images
