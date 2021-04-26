@@ -8,8 +8,9 @@ const StyledLogo = styled.div`
     display: flex;
     align-items: center;
     padding-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Wallpoet', cursive; */
+    /* font-weight: 600; */
     h1 {
         font-size: 15px !important;
     }
@@ -98,6 +99,10 @@ const NavStyled = styled.nav`
     .logo a span {
        /* max-width: 100px; */
     }
+
+    .logo-text {
+        /* font-family: 'Wallpoet', cursive !important; */
+    }
     .logo a span {
         font-size: 26px;
         /* max-width: 100px; */
@@ -108,7 +113,9 @@ const NavStyled = styled.nav`
         /* font-family: 'Faster One', cursive; */
         /* font-family: 'Major Mono Display', monospace; */
         /* font-family: 'Gruppo', cursive;  */
-        font-family: 'Reem Kufi', sans-serif;
+        /* font-family: 'Reem Kufi', sans-serif; */
+        /* font-family: 'Wallpoet', cursive; */
+        font-family: 'Libre Franklin', sans-serif;
         letter-spacing: 3px;
         @media (min-width: 658px) {
             font-size: 46px;
@@ -145,7 +152,7 @@ export default class Nav extends React.Component {
             <NavStyled>
                 <StyledLogo>
 
-                <span className="logo"><a href='/'><span>Lightning Jib</span></a></span>
+                <span className="logo"><a href='/'><span className='logo-text'>Lightning Jib</span></a></span>
           
                 </StyledLogo>
                 

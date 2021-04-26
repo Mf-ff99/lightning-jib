@@ -433,7 +433,7 @@ div.hero-info-container {
   width: 100%;
   min-height: 700px !important;
   color: #FFFFEA;
-  background-color: black;
+  background-color: #023047;
 }
 
 div.hero-info-container i {
@@ -903,6 +903,16 @@ body {
 
 body, html {
   height: 100%;
+}
+
+.parallax {
+  padding-top: 80px;
+}
+
+nav {
+  border-top: 2px solid #023047;
+  border-bottom: 2px solid #023047;
+  position: fixed;
 }
 
 .parallax__layer--base, .parallax__layer {

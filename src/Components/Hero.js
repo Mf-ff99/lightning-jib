@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import images from '../assets/images/BarreledImages'
 import ReactPlayer from 'react-player/lazy'
+// import { IoIosWifi } from 'react-icons/fa';
 // import Background from '/videos/lightning-background.mp4'
 
 
@@ -82,7 +83,8 @@ export default function Hero() {
                                 <p>Fly your camera package of choice in a matter of minutes. Put your lens where you want, cinematic crane shots are always at your fingertips. The freedom is yours.</p>
                             </div>
                             <div className='hero-info-div'>
-                                <i class="fas fa-wifi fa-3x"></i>
+                                {/* <IoIosWifi></IoIosWifi> */}
+                            <i class="fas fa-wifi fa-3x"></i>
                                 <p>Control the DJI RS2 wirelessly with joystick and cinema wheels. Not a jib op? You can guide the camera with an Android or iOS device of your choice.</p>
                             </div>
 

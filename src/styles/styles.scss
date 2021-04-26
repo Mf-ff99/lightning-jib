@@ -72,6 +72,16 @@ body, html {
     // opacity: .8;
 }
 
+.parallax {
+    padding-top: 80px;
+}
+
+nav {
+    border-top: 2px solid $bg-blue;
+    border-bottom: 2px solid $bg-blue;
+    position: fixed;
+}
+
 // .parallax {
 //     perspective: 1px;
 //     height: 100vh;
